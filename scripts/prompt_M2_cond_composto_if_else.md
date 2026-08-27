@@ -16,7 +16,7 @@
     - Fácil: solução de 4 a 6 linhas.
     - Média: solução de 7 a 10 linhas.
     - Difícil: solução de 11 a 20 linhas.
-- **Estrutura condicional alvo:** {if simples | if/else | if/elif/else | condicionais aninhadas | condição composta com and/or/not}
+- **Estrutura condicional alvo:** {if/else}
 - **Concepção(ões) alternativa(s) alvo:** {escolher até 2 da seção 4, uma por distrator}
 - **Distratores por questão:** 2 (fixo).
 - **Indentação avaliada (Parsons 2D):** sim (fixo; o CodeBench cobra a indentação do aluno).
@@ -42,12 +42,11 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
 2. Operador de comparação com erro de borda: `>` no lugar de `>=`, `<` no lugar de `<=`.
 3. Ausência dos dois-pontos após a condição (`if x > 0` sem `:`).
 4. `else` tratado como se aceitasse condição (`else x > 0:`).
-5. `elif` confundido com um novo `if` independente, criando ramos que deveriam ser exclusivos e ficam sobrepostos.
+5. Efeito colateral no ramo errado: imprimir dentro do ramo quando o cálculo deveria ocorrer depois da condição, ou duplicar/omitir `print`.
 6. Ordem das condições cria ramo morto (condição mais geral colocada antes da mais específica).
 7. Lógica booleana trocada: `and` por `or`, ou negação incorreta.
 8. Conversão de tipo ausente: comparar o retorno de `input()` (string) com número sem `int()`/`float()`.
-9. Comparação de strings: sensibilidade a maiúsculas/minúsculas ou valor de comparação errado.
-10. Efeito colateral no ramo errado: imprimir dentro do ramo quando o cálculo deveria ocorrer depois da condição, ou duplicar/omitir `print`.
+
 
 ## 5. Regras do código (solução de referência)
 
@@ -62,11 +61,9 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
     leitura de um ou mais valores        [varie a quantidade de inputs]
     (opcional) uma linha de cálculo       [antes do if]
     if condicao:
-        print e/ou operação
-    (elif condicao:)                      [quando a estrutura alvo exigir]
-        print e/ou operação
+        input e/ou print e/ou linha de cálculo
     else:
-        print e/ou operação
+        input e/ou print e/ou linha de cálculo
     (opcional) uma linha de cálculo       [após o condicional]
     (opcional) print final                [um ou mais prints]
     ```
@@ -86,9 +83,9 @@ Os valores devem ser passados diretamente ao print() ou concatenados como string
 Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de entradas, lista de saídas.
 
 - **Narrativa:** história breve que contextualiza o problema, sem enredo complexo. Deve mencionar uma figura ou elemento relevante da temática escolhida.
-- **Comando:** o que o programa deve fazer, de forma direta.
+- **Comando:** o que o programa deve fazer, de forma direta. Deve ser autocontido, sem depender da descrição das entradas e saídas.
 - **Fórmulas:** se houver qualquer cálculo (mesmo simples), apresente a fórmula em LaTeX, com o código LaTeX, seguida de explicação breve.
-- **Entradas e Saídas** em parágrafos separados; as palavras-chave **Entrada**, **Saída**, **Entrada 1**, **Saída 1**, etc. em negrito. Cada `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada.
+- **Entradas e Saídas** em listas de tópicos separados; as palavras-chave **Entrada**, **Saída** em negrito; cada entrada deve ser descrita em um tópico (bullet) distinto; as descrições de cada entrada e saída devem ser breves e diretas. Cada comando `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada.
 - Frase final indicando o tópico avaliado (ex.: “Tópico: Condicional composta com if/else”).
 
 ## 7. Regras dos casos de teste (correção automática CodeBench)
