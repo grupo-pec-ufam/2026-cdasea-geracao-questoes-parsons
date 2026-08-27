@@ -90,7 +90,7 @@ Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de
 
 ## 7. Regras dos casos de teste (correção automática CodeBench)
 
-- **Cobertura de ramos:** ao menos um caso por caminho (if, cada elif, else).
+- **Cobertura de ramos:** ao menos um caso por caminho (if, else).
 - **Bordas:** inclua o valor no limite da condição e a condição inversa. Ex.: se a condição é `nota >= 7`, teste `nota = 7` e `nota = 6`.
 - **Quantidade:** no mínimo 3 casos públicos (visíveis) e no mínimo 3 privados (para correção), no estilo beecrowd/codeforces. Indique ao lado de cada caso qual ramo ou borda ele cobre.
 - **Regra anti-falso-positivo:** a saída de um ramo **não pode** ser substring nem prefixo da saída de outro ramo.
@@ -99,7 +99,7 @@ Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de
 ## 8. Regras dos fragmentos de Parsons
 
 - Cada fragmento deve ser curto (máx. ~120 caracteres) e autocontido.
-- **Parsons 2D (indentação avaliada):** o cabeçalho de cada ramo (`if`, `elif`, `else`) e cada linha do corpo são fragmentos separados, apresentados já com a indentação relativa correta que o aluno deverá reproduzir. O CodeBench cobra que o aluno posicione e indente cada fragmento.
+- **Parsons 2D (indentação avaliada):** o cabeçalho de cada ramo (`if`, `else`) e cada linha do corpo são fragmentos separados, apresentados já com a indentação relativa correta que o aluno deverá reproduzir. O CodeBench cobra que o aluno posicione e indente cada fragmento.
 - Entregue os fragmentos na ordem correta da solução.
 - **Distratores (exatamente 2 por questão):** devem ser variações incorretas de linhas específicas da solução (distratores pareados), usando o mesmo estilo e os mesmos nomes de variáveis, para confundir de forma construtiva. Sempre que possível, cada um deve estar pareado a uma linha correta distinta e materializar uma concepção alvo diferente da seção 4. Cada distrator vem marcado com um comentário lateral identificando a linha correta correspondente e a concepção, para o revisor.
 
@@ -182,4 +182,4 @@ else nota_b > nota_a:            # DISTRATOR do fragmento "else:" | Concepção 
 
 ---
 
-Objetivo final: gerar 10 Problemas de Parsons completos sobre condicionais, conforme todas as instruções acima, sem comentários adicionais ou texto fora do formato especificado.
+Objetivo final: gerar 10 Problemas de Parsons completos sobre condicionais compostos (if/else), conforme todas as instruções acima, sem comentários adicionais ou texto fora do formato especificado.
