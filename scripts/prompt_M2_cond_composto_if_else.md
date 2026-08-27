@@ -50,6 +50,7 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
 - **Não** utilize métodos de lista ou de string prontos (`append`, `strip`, `split`, `sort`, `upper`, etc.), salvo autorização explícita nos parâmetros.
 - Código correto, completo e executável.
 - Nomes de variáveis descritivos e coerentes com o tema (não use a mesma palavra para variáveis distintas).
+- Cada comando `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada.
 - Padrão base de estrutura, variando a posição dos elementos entre as questões:
 - 
     
@@ -64,6 +65,7 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
     (opcional) print final                [um ou mais prints]
     ```
 - No máximo **uma** linha extra de cálculo aritmético por questão, variando a posição entre as questões (antes do if, dentro de um ramo, ou após o condicional).
+- A string de saída do comando `print()` deve ter, no máximo, 15 caracteres.
 - Quando a saída depender de cálculo, o enunciado deve pedir arredondamento com `round()`; o número de casas varia de 1 a 6. Para valores monetários, use 2 casas. Atenção: em Python `round(2.0, 2)` imprime `2.0`; garanta que os casos de teste reflitam exatamente a saída real.
 - Não usar comandos de formatação no comando `print()`.
 - Restrição sobre formatação no `print()`: No código de solução, os comandos `print()` devem exibir os valores diretamente, sem qualquer formatação embutida. É proibido usar:
@@ -72,16 +74,16 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
 - o operador de formatação `%` (ex.: `"%.2f" % x`);
 - especificadores de precisão, largura, alinhamento ou separador de milhar (ex.: `:.2f`, `:>10`, `:,`);
 - os parâmetros `sep` e `end` do `print()` (ex.: `print(a, b, sep=", ")`).
-Os valores devem ser passados diretamente ao print() ou concatenados como strings simples.
+- Os valores devem ser passados diretamente ao print() ou concatenados como strings simples.
 
 ## 6. Regras do enunciado
 
 Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de entradas, lista de saídas.
 
 - **Narrativa:** história breve que contextualiza o problema, sem enredo complexo. Deve mencionar uma figura ou elemento relevante da temática escolhida.
-- **Comando:** o que o programa deve fazer, de forma direta. Deve ser autocontido, sem depender da descrição das entradas e saídas.
+- **Comando:** o que o programa deve fazer, de forma direta. Deve deixar claro quais são entradas, o que o programa deve fazer com elas e quais são as saídas. Não deve depender da descrição de outras partes do enunciado.
 - **Fórmulas:** se houver qualquer cálculo (mesmo simples), apresente a fórmula em LaTeX, com o código LaTeX, seguida de explicação breve.
-- **Entradas e Saídas** em listas de tópicos separados; as palavras-chave **Entrada**, **Saída** em negrito; cada entrada deve ser descrita em um tópico (bullet) distinto; as descrições de cada entrada e saída devem ser breves e diretas. Cada comando `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada.
+- **Entradas e Saídas** em listas de tópicos separados; as palavras-chave **Entrada**, **Saída** em negrito; cada entrada deve ser descrita em um tópico (bullet) distinto; as descrições de cada entrada e saída devem ser breves e diretas. Deve resumir as entradas e saídas descritas na parte **Comando**.
 - Frase final indicando o tópico avaliado (ex.: “Tópico: Condicional composta com if/else”).
 
 ## 7. Regras dos casos de teste (correção automática CodeBench)
