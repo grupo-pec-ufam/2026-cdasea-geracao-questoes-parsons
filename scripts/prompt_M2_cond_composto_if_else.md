@@ -12,10 +12,6 @@
 ## 1. Parâmetros 
 
 - **Quantidade de questões:** 10 (fixo).
-- **Dificuldade e distribuição:** {ex.: 10 de nível Média | ou “4 Fácil, 4 Média, 2 Difícil”}
-    - Fácil: solução de 4 a 6 linhas.
-    - Média: solução de 7 a 10 linhas.
-    - Difícil: solução de 11 a 20 linhas.
 - **Estrutura condicional alvo:** {if/else}
 - **Concepção(ões) alternativa(s) alvo:** {escolher até 2 da seção 4, uma por distrator}
 - **Distratores por questão:** 2 (fixo).
@@ -52,7 +48,7 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
 
 - Subconjunto permitido do Python: `input()`, `print()`, `int()`, `float()`, `round()`, `abs()`, operadores aritméticos, relacionais e lógicos.
 - **Não** utilize métodos de lista ou de string prontos (`append`, `strip`, `split`, `sort`, `upper`, etc.), salvo autorização explícita nos parâmetros.
-- Código correto, completo e executável, com contagem de linhas compatível com a dificuldade.
+- Código correto, completo e executável.
 - Nomes de variáveis descritivos e coerentes com o tema (não use a mesma palavra para variáveis distintas).
 - Padrão base de estrutura, variando a posição dos elementos entre as questões:
 - 
@@ -118,7 +114,6 @@ Não inclua metaexplicações sobre o exercício nem qualquer texto fora deste f
 ## 10. Lista de verificação final (aplique antes de responder)
 
 - [ ]  A solução executa e produz exatamente as saídas de todos os casos de teste.
-- [ ]  A contagem de linhas da solução está dentro da faixa da dificuldade pedida.
 - [ ]  Cada ramo tem ao menos um teste e as bordas foram cobertas.
 - [ ]  Nenhuma saída de ramo é substring ou prefixo da saída de outro ramo.
 - [ ]  Há exatamente 2 distratores, cada um pareado a uma linha correta, marcado e refletindo uma concepção da seção 4.
