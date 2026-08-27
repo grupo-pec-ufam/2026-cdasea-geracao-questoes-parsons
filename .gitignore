@@ -2,8 +2,8 @@
 # Regra geral: dados brutos e dados grandes NÃO vão para o Git.
 # Versione os dados com DVC ou guarde em armazenamento externo.
 # Mantenha apenas as pastas (via .gitkeep) e o data/README.md.
-data/raw/*
-data/processed/*
+
+
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 *.csv
