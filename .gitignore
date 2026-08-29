@@ -4,8 +4,6 @@
 # Mantenha apenas as pastas (via .gitkeep) e o data/README.md.
 
 
-!data/raw/.gitkeep
-!data/processed/.gitkeep
 *.csv
 *.tsv
 *.xlsx
