@@ -4,12 +4,6 @@
 # Mantenha apenas as pastas (via .gitkeep) e o data/README.md.
 
 
-*.csv
-*.tsv
-*.xlsx
-*.parquet
-*.db
-*.sqlite
 
 # ==== Python ====
 __pycache__/

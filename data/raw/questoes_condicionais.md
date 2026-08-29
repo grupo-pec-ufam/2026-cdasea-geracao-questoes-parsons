@@ -1,4 +1,4 @@
-**1. Título:** `Desconto Ada Lovelace`
+**1. Título:** `Desconto Ada Lovelace (alterar)`
 
 **2. Enunciado:**
 Para assistir a uma palestra de Ada Lovelace sobre a Máquina Analítica, estudantes têm direito a um desconto fixo de R$ 15 no valor do ingresso.
