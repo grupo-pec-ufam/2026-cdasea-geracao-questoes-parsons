@@ -45,10 +45,8 @@ Repositório do projeto de iniciação científica voltado à elaboração de **
 ### Opção 2 — Pelo terminal
 
 ```bash
-git clone https://github.com/<usuario-ou-organizacao>/2026-cdasea-geracao-questoes-parsons.git
+git clone https://github.com/grupo-pec-ufam/2026-cdasea-geracao-questoes-parsons
 ```
-
-> Substitua `<usuario-ou-organizacao>` pelo dono real do repositório no GitHub.
 
 ## Comandos básicos do dia a dia
 
