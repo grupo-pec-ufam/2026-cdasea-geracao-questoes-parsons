@@ -1,0 +1,1 @@
+## adicionar questões processadas de condicionais aqui. 
