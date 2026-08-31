@@ -68,11 +68,11 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
         print e/ou operação
     else:
         print e/ou operação
-    (opcional) uma linha de cálculo       [após o condicional]
-    (opcional) print final                [um ou mais prints]
+    uma linha de cálculo       [fora do condicional]
+    print final                [um ou mais prints]
     ```
     
-- No máximo **uma** linha extra de cálculo aritmético por questão, variando a posição entre as questões (antes do if, dentro de um ramo, ou após o condicional).
+- No máximo **duas** linha extra de cálculo aritmético por questão, variando a posição entre as questões (antes do if, dentro de um ramo, ou após o condicional).
 - Cada `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada; exemplo: 
 (`idade = int(input("idade: "))`). 
 - Quando a saída depender de cálculocom numeros reais (floats), o enunciado deve pedir arredondamento com `round()`; o número de casas varia de 1 a 6. Para valores monetários, use 2 casas. Atenção: em Python `round(2.0, 2)` imprime `2.0`; garanta que os casos de teste reflitam exatamente a saída real.
@@ -143,7 +143,7 @@ Não inclua metaexplicações sobre o exercício nem qualquer texto fora deste f
 - [ ]  Rótulos de `input()` têm até 15 caracteres; saídas numéricas usam `round()` quando aplicável.
 - [ ]  A saída contém apenas o conteúdo do contrato, sem texto extra.
 
-## 11. Exemplo resolvido (modelo de formato, if/elif/else, nível Média)
+## 11. Exemplo  de questão  de nivel facil (modelo de formato, if/elif/else, nível facil)
 
 **1. Título:** `Prioridade de Propostas - Versão A`
 
@@ -159,7 +159,7 @@ Escreva um programa que leia a nota da Proposta A e a nota da Proposta B e infor
 
 Tópico: Condicional composta com if/elif/else.
 
-**3. Solução de referência:**
+**3. Solução:**
 
 ```python
 nota_a = int(input("Nota A: "))
@@ -172,10 +172,8 @@ else:
     print("Proposta B tem prioridade.")
 ```
 
-**4. Explicação passo a passo:**
-As duas primeiras linhas leem as notas e as convertem para inteiro com `int()`, pois `input()` retorna string. A condição `nota_a == nota_b` usa o operador de igualdade `==` para testar empate. O `elif` cobre o caso em que A supera B; o `else` cobre o único caso restante, B maior que A. O código não valida entradas não numéricas: valores não inteiros gerariam erro na conversão.
 
-**5. Casos de teste:**
+**4. Casos de teste:**
 
 Públicos:
 - Entrada: `5` / `5` -> Saída: `Propostas iguais.` (ramo if, borda de igualdade)
@@ -187,7 +185,7 @@ Privados:
 - Entrada: `6` / `7` -> Saída: `Proposta B tem prioridade.` (borda, diferença mínima)
 - Entrada: `0` / `0` -> Saída: `Propostas iguais.` (borda, valor zero)
 
-**6. Distratores (marcados):**
+**5. Distratores (marcados):**
 
 ```
 if nota_a = nota_b:              # DISTRATOR do fragmento "if nota_a == nota_b:" | Concepção 1: atribuição (=) no lugar de igualdade (==)
@@ -196,5 +194,5 @@ else nota_b > nota_a:            # DISTRATOR do fragmento "else:" | Concepção 
 
 ---
 
-Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível medio(7 a 10 linhas como a quesão modelo), conforme todas as instruções acima e `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
+Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível dificil(10 a 15 linhas), conforme todas as instruções passadas e as intruções do documento `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
 
