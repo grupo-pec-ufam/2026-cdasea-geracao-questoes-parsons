@@ -72,7 +72,7 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
     print final                [um ou mais prints]
     ```
     
-- No máximo **duas** linha extra de cálculo aritmético por questão, variando a posição entre as questões (antes do if, dentro de um ramo, ou após o condicional).
+- No máximo **uma** linha extra de cálculo aritmético por questão, variando a posição entre as questões (antes do if, dentro de um ramo, ou após o condicional).
 - Cada `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada; exemplo: 
 (`idade = int(input("idade: "))`). 
 - Quando a saída depender de cálculocom numeros reais (floats), o enunciado deve pedir arredondamento com `round()`; o número de casas varia de 1 a 6. Para valores monetários, use 2 casas. Atenção: em Python `round(2.0, 2)` imprime `2.0`; garanta que os casos de teste reflitam exatamente a saída real.
@@ -194,5 +194,5 @@ else nota_b > nota_a:            # DISTRATOR do fragmento "else:" | Concepção 
 
 ---
 
-Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível dificil(10 a 15 linhas), conforme todas as instruções passadas e as intruções do documento `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
+Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível medio(8 a 13 linhas), conforme todas as instruções passadas e as intruções do documento `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
 
