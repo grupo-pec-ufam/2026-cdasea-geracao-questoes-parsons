@@ -45,11 +45,11 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
 3. Ausência dos dois-pontos após a condição (`if x > 0` sem `:`).
 4. `else` tratado como se aceitasse condição (`else x > 0:`).
 5. `elif` confundido com um novo `if` independente, criando ramos que deveriam ser exclusivos e ficam sobrepostos.
-6. Ordem das condições cria ramo morto (condição mais geral colocada antes da mais específica).
-7. Lógica booleana trocada: `and` por `or`, ou negação incorreta.
-8. Conversão de tipo ausente: comparar o retorno de `input()` (string) com número sem `int()`/`float()`.
-9. Comparação de strings: sensibilidade a maiúsculas/minúsculas ou valor de comparação errado.
-10. Efeito colateral no ramo errado: imprimir dentro do ramo quando o cálculo deveria ocorrer depois da condição, ou duplicar/omitir `print`.
+6. Lógica booleana trocada: `and` por `or`, ou negação incorreta.
+7. Ausência de conversão de tipo: retorno de `input()` (string) não convertido para `int()`/`float()`. Ou conversão para o tipo errado: retorno de `input()` (string) convertido para `int()`, em vez de `float()`, ou o contrário.
+8. Confusão entre operadores de divisão: resto da divisão (`%`), divisão inteira (`//`) e divisão float (`/`).
+9. Condição com operador relacional invertido: `>` no lugar de `<=`, `<` no lugar de `>=`, ou `==` no lugar de `!=`, e vice-versa.
+10. Ausência de função pedida no enunciado. Por exemplo: `round()`, `abs()`, `sqrt()`, entre outras.
 
 ## 5. Regras do código (solução de referência)
 
@@ -196,3 +196,4 @@ else nota_b > nota_a:            # DISTRATOR do fragmento "else:" | Concepção 
 
 Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível medio(8 a 13 linhas), conforme todas as instruções passadas e as intruções do documento `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
 
+Boas praticas e template para elaboracao de questoes.docx
