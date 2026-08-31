@@ -4,7 +4,7 @@
 
 ## 0. Como usar (checklist do professor, não faz parte do prompt enviado à LLM)
 
-- Anexe como contexto: “boas práticas para elaboração de questões”, “instruções para enunciados”, `topicosCodeBench.md` e, se for usar tema fechado, o documento temático.
+- Anexe como contexto: `roteiro_parsons_codebench_cosolidado.md`,`topicosCodeBench.md` e, se for usar tema fechado, o documento temático.
 - Preencha o bloco **1. Parâmetros** abaixo.
 - Use o modo de raciocínio mais profundo disponível na LLM.
 - Copie a partir da seção **2. Papel** até o fim.
@@ -34,7 +34,7 @@ Você é um Professor Especialista em Ciência da Computação e Revisor de Qual
 
 ## 3. Tarefa
 
-Gerar **10** Problemas de Parsons completos sobre estruturas condicionais, prontos para uso, respeitando o contrato de saída da seção 9. Raciocine internamente e planeje cada questão antes de escrever, mas **não inclua o raciocínio na resposta**. Antes de emitir a resposta final, aplique integralmente a **Lista de verificação** da seção 10.
+Gerar **10** Problemas de Parsons completos sobre estruturas condicionais, prontos para uso, para estudantes que estão tendo o seu primeiro contato com programação, respeitando o contrato de saída da seção 9. Raciocine internamente e planeje cada questão antes de escrever, mas **não inclua o raciocínio na resposta**. Antes de emitir a resposta final, aplique integralmente a **Lista de verificação** da seção 10.
 
 ## 4. Catálogo de concepções alternativas em condicionais
 
@@ -73,10 +73,12 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
     ```
     
 - No máximo **uma** linha extra de cálculo aritmético por questão, variando a posição entre as questões (antes do if, dentro de um ramo, ou após o condicional).
-- Quando a saída depender de cálculo, o enunciado deve pedir arredondamento com `round()`; o número de casas varia de 1 a 6. Para valores monetários, use 2 casas. Atenção: em Python `round(2.0, 2)` imprime `2.0`; garanta que os casos de teste reflitam exatamente a saída real.
+- Cada `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada; exemplo: 
+(`idade = int(input("idade: "))`). 
+- Quando a saída depender de cálculocom numeros reais (floats), o enunciado deve pedir arredondamento com `round()`; o número de casas varia de 1 a 6. Para valores monetários, use 2 casas. Atenção: em Python `round(2.0, 2)` imprime `2.0`; garanta que os casos de teste reflitam exatamente a saída real.
 - Não usar comandos de formatação no comando `print()`.
 - Restrição sobre formatação no `print()`: No código de solução, os comandos `print()` devem exibir os valores diretamente, sem qualquer formatação embutida. É proibido usar:
-    - f-strings com especificadores de formato (ex.: `f"{x:.2f}", f"{n:>5}")`;
+    - f-strings com especificadores de formato (ex.: `f"{x:.2f}", f"{n:>5}"`);
     - o método `.format()` (ex.: `"{:.2f}".format(x)`);
     - o operador de formatação `%` (ex.: `"%.2f" % x`);
     - especificadores de precisão, largura, alinhamento ou separador de milhar (ex.: `:.2f`, `:>10`, `:,`);
@@ -89,10 +91,16 @@ Use este catálogo para escolher a concepção alvo de cada questão e para dese
 
 Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de entradas, lista de saídas.
 
-- **Narrativa:** história breve que contextualiza o problema, sem enredo complexo. Deve mencionar uma figura ou elemento relevante da temática escolhida.
+- **Narrativa:** história breve que contextualiza o problema, sem enredo complexo. variando sobre os temas:
+    - videogames conhecidos;
+    - series, filmes, desenhos e personagens da cultura pop;
+    - figuras classicas da hitoria;
+    - figuras mitologicas conhecidas (sasi pererê, thor, zeus, etc. );
+    - Assuntos da vida  acadêmica cotidiana na UFAM (RU, onibus, notas, cursos, disciplinas, etc.);
+    - assuntos interessantes nas area de exatas (viagem espacial, IA, matematica, fisica, engenharia, etc.)
 - **Comando:** o que o programa deve fazer, de forma direta.
 - **Fórmulas:** se houver qualquer cálculo (mesmo simples), apresente a fórmula em LaTeX, com o código LaTeX, seguida de explicação breve.
-- **Entradas e Saídas** em parágrafos separados; as palavras-chave **Entrada**, **Saída**, **Entrada 1**, **Saída 1**, etc. em negrito. Cada `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada.
+- **Entradas e Saídas** em parágrafos separados; as palavras-chave **Entrada**, **Saída**, **Entrada 1**, **Saída 1**, etc. em negrito. 
 - Frase final indicando o tópico avaliado (ex.: “Tópico: Condicional composta com if/else”).
 
 ## 7. Regras dos casos de teste (correção automática CodeBench)
@@ -186,12 +194,7 @@ if nota_a = nota_b:              # DISTRATOR do fragmento "if nota_a == nota_b:"
 else nota_b > nota_a:            # DISTRATOR do fragmento "else:" | Concepção 5: else tratado como se aceitasse condição
 ```
 
-**7. Dicas de resolução:**`input()` sempre retorna texto; use `int()` para comparar numericamente. Use `==` (dois iguais) para testar igualdade; um único `=` é atribuição. O `else` não recebe condição.
-
-**8. Tópicos abordados:** (selecionar de `topicosCodeBench.md`, ex.: Leitura de dados, Conversão de tipos, Condicional composta if/elif/else, Operadores relacionais.)
-
 ---
 
-Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais, conforme todas as instruções acima, sem comentários adicionais ou texto fora do formato especificado.
+Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível medio(7 a 10 linhas como a quesão modelo), conforme todas as instruções acima e `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
 
-Boas praticas e template para elaboracao de questoes.docx
