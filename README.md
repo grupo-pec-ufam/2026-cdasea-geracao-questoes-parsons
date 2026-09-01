@@ -33,6 +33,11 @@ Repositório do projeto de iniciação científica voltado à elaboração de **
 
 ## Como clonar o repositório
 
+- **OBS:** se torna mais fácil utilizando o VS Code com a extensão `GitHub pull request` instalada.
+- **OBS:** Se tiver no Windows, você deve instalar o Git no seu computador.
+    - https://git-scm.com/install/windows
+
+
 ### Opção 1 — Pelo VS Code (recomendado para quem está começando)
 
 1. Instalar o [VS Code](https://code.visualstudio.com/).
@@ -77,7 +82,7 @@ Pelo VS Code, os mesmos passos são feitos no painel **Source Control** (`Ctrl+S
 1. **Pull** — sempre trazer as atualizações antes de começar a editar `git pull`.
 2. Editar o arquivo `.md` correspondente (em `questoes/gerado/` ou `questoes/processado/`, conforme o caso).
 3. Salvar o arquivo.
-4. **Stage** das alterações `git add.`.
+4. **Stage** das alterações `git add .` .
 5. **Commit** com uma mensagem curta e clara (ex.: `Adiciona questão 016 sobre laços condicionais`) `git commit -m "mensagem dizendo o que alterou/criou"`.
 6. **Push** para enviar ao repositório `git push`.
 
