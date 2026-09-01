@@ -1,4 +1,4 @@
-# 2026-cdasea-geracao-questoes-parsons
+# 2026 CDASEA Geracao de Questoes Parsons
 
 Repositório do projeto de iniciação científica voltado à elaboração de **questões no formato Parsons** (Parsons Problems) para o **CodeBench**, com apoio de LLMs. Aqui ficam os prompts usados na geração, as questões produzidas e a documentação de boas práticas do grupo.
 
@@ -43,15 +43,27 @@ Repositório do projeto de iniciação científica voltado à elaboração de **
 6. Escolher a pasta local onde salvar e clicar em **"Open"** quando terminar.
 
 ### Opção 2 — Pelo terminal
-
+1. abra o vs code e escolha uma pasta onde deseja salvar o reporitório. 
+2.  clone o repositório onde preferir com o comando: 
 ```bash
-git clone https://github.com/grupo-pec-ufam/2026-cdasea-geracao-questoes-parsons
+git clone https://github.com/grupo-pec-ufam/2026-cdasea-geracao-questoes-parsons.git
 ```
+3. Saia da branch main e crie uma nova branch para você trabalhar:
+```bash
+git checkout -b <nome_da_sua_branch>
+```
+4. Envie a sua branch para o github.
+```bash
+git push -u origin <nome_da_sua_branch>
+```
+5. Neste primeiro push será solicitado um login no git, (etapa única).
+6. Agora basta criar seus arquivos de questões, e segir o fluxo do git como sugerido abaixo.
 
 ## Comandos básicos do dia a dia
 
 | Comando | O que faz |
 |---|---|
+| `git branch` | mostra em qual branch voce está. |
 | `git pull` | Traz para o seu computador as atualizações que outras pessoas já enviaram. |
 | `git status` | Mostra quais arquivos você alterou desde o último commit. |
 | `git add .` | Prepara (stage) todas as alterações para entrarem no próximo commit. |
@@ -62,12 +74,12 @@ Pelo VS Code, os mesmos passos são feitos no painel **Source Control** (`Ctrl+S
 
 ## Fluxo recomendado ao editar uma questão
 
-1. **Pull** — sempre trazer as atualizações antes de começar a editar.
+1. **Pull** — sempre trazer as atualizações antes de começar a editar `git pull`.
 2. Editar o arquivo `.md` correspondente (em `questoes/gerado/` ou `questoes/processado/`, conforme o caso).
 3. Salvar o arquivo.
-4. **Stage** das alterações.
-5. **Commit** com uma mensagem curta e clara (ex.: `Adiciona questão 016 sobre laços condicionais`).
-6. **Push** para enviar ao repositório.
+4. **Stage** das alterações `git add.`.
+5. **Commit** com uma mensagem curta e clara (ex.: `Adiciona questão 016 sobre laços condicionais`) `git commit -m "mensagem dizendo o que alterou/criou"`.
+6. **Push** para enviar ao repositório `git push`.
 
 ## Boas práticas
 
