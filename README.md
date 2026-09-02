@@ -1,4 +1,4 @@
-# 2026 CDASEA Geracao de Questoes Parsons
+# 2026 CDASEA Geração de Questões Parsons
 
 Repositório do projeto de iniciação científica voltado à elaboração de **questões no formato Parsons** (Parsons Problems) para o **CodeBench**, com apoio de LLMs. Aqui ficam os prompts usados na geração, as questões produzidas e a documentação de boas práticas do grupo.
 
