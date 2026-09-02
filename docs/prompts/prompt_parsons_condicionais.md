@@ -94,10 +94,10 @@ Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de
 - **Narrativa:** história breve que contextualiza o problema, sem enredo complexo. variando sobre os temas:
     - videogames conhecidos;
     - series, filmes, desenhos e personagens da cultura pop;
-    - figuras classicas da hitoria;
-    - figuras mitologicas conhecidas (sasi pererê, thor, zeus, etc. );
-    - Assuntos da vida  acadêmica cotidiana na UFAM (RU, onibus, notas, cursos, disciplinas, etc.);
-    - assuntos interessantes nas area de exatas (viagem espacial, IA, matematica, fisica, engenharia, etc.)
+    - figuras clássicas da história;
+    - figuras mitológicas conhecidas (saci pererê, thor, zeus, etc. );
+    - Assuntos da vida  acadêmica cotidiana na UFAM (RU, ônibus, notas, cursos, disciplinas, etc.);
+    - assuntos interessantes nas area de exatas (viagem espacial, IA, matemática, física, engenharia, etc.)
 - **Comando:** o que o programa deve fazer, de forma direta.
 - **Fórmulas:** se houver qualquer cálculo (mesmo simples), apresente a fórmula em LaTeX, com o código LaTeX, seguida de explicação breve.
 - **Entradas e Saídas** em parágrafos separados; as palavras-chave **Entrada**, **Saída**, **Entrada 1**, **Saída 1**, etc. em negrito. 
