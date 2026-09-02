@@ -36,9 +36,9 @@ Você é um Professor Especialista em Ciência da Computação e Revisor de Qual
 
 Gerar **10** Problemas de Parsons completos sobre estruturas condicionais, prontos para uso, para estudantes que estão tendo o seu primeiro contato com programação, respeitando o contrato de saída da seção 9. Raciocine internamente e planeje cada questão antes de escrever, mas **não inclua o raciocínio na resposta**. Antes de emitir a resposta final, aplique integralmente a **Lista de verificação** da seção 10.
 
-## 4. Catálogo de concepções alternativas em condicionais
+## 4. Catálogo de misconceptions em condicionais
 
-Use este catálogo para escolher a concepção alvo de cada questão e para desenhar distratores fiéis a erros reais de novatos. Cada distrator deve materializar uma destas concepções:
+Use este catálogo para escolher o misconception (erro de compreensão) alvo de cada questão e para desenhar distratores fiéis a erros reais e comuns entre novatos. Cada distrator deve materializar um destes misconceptions:
 
 1. Atribuição no lugar de igualdade: `=` em vez de `==` na condição.
 2. Operador de comparação com erro de borda: `>` no lugar de `>=`, `<` no lugar de `<=`.
