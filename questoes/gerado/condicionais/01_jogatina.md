@@ -54,7 +54,7 @@ if grana >= custo:
     print("Diversao garantida")
 else:
     divida = custo - grana
-    print(f"Faltam moedas")
+    print("Faltam moedas")
 
 print("Volte sempre")
 
