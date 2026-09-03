@@ -59,8 +59,3 @@ else:
 
 print("Volte sempre")
 
-
-### O que foi corrigido para o preview funcionar?
-* *Criação de Títulos:* Uso de # e ## para separar seções (Título, Enunciado, Testes).
-* *Quebras de Linha:* Separar o texto corrido em parágrafos e listas com marcadores (*).
-* *Bloco de Código:* Uso de três crases (```python) para que o código Python fique colorido e endentado corretamente no preview.
