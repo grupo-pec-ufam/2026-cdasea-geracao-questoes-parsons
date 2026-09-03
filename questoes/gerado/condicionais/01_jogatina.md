@@ -47,7 +47,6 @@ Escreva um programa que leia as seguintes entradas:
 
 ## 5. Gabarito (Código Python)
 
-python
 grana = float(input("Dinheiro (R$): "))
 custo = float(input("Custo (R$): "))
 
@@ -55,7 +54,7 @@ if grana >= custo:
     print("Diversao garantida")
 else:
     divida = custo - grana
-    print("Faltam moedas")
+    print(f"Faltam moedas")
 
 print("Volte sempre")
 
