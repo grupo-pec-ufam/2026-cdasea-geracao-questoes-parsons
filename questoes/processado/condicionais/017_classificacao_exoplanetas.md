@@ -54,17 +54,17 @@ O programa pressupõe entradas válidas com raio estritamente positivo (raio>0).
 ### Públicos
 | Entrada (`massa` / `raio`) | Densidade Calculada | Saída Esperada | Ramo Executado |
 | :--- | :--- | :--- | :--- |
-| `10.0` / `1.0` | $10.000$  | `Rochoso` $10.000$ | `if` ($\ge 5$) |
-| `2.5` / `1.0` | $2.500$ | `Gasoso` $2.500$ | `elif` ($\ge 2$) |
-| `5.0` / `1.5` | $1.481$ | `Gelado` $1.481$ | `else` ($< 2$) |
+| `10.0` / `1.0` | $10.000$  | `Rochoso` / $10.00$ | `if` ($\ge 5$) |
+| `2.5` / `1.0` | $2.500$ | `Gasoso` / $2.50$ | `elif` ($\ge 2$) |
+| `5.0` / `1.5` | $1.481$ | `Gelado` / $1.48$ | `else` ($< 2$) |
 
 ### Privados (Testes de Borda)
 | Entrada (`massa` / `raio`) | Densidade Calculada | Saída Esperada | Observação / Limite |
 | :--- | :--- | :--- | :--- |
-| `5.0` / `1.0` | $5.000$ | `Rochoso` $5.000$ | Limite exato superior ($\ge 5$) |
-| `4.999` / `1.0` | $4.999$ | `Gasoso` $4.999$ | Logo abaixo do limite superior ($< 5$) |
-| `2.0` / `1.0` | $2.000$ | `Gasoso`  $2.000$| Limite exato inferior ($\ge 2$) |
-| `1.999` / `1.0` | $1.999$ | `Gelado` $1.999$ | Logo abaixo do limite inferior ($< 2$) |
+| `5.0` / `1.0` | $5.000$ | `Rochoso` / $5.00$ | Limite exato superior ($\ge 5$) |
+| `4.999` / `1.0` | $4.999$ | `Gasoso` / $4.99$ | Logo abaixo do limite superior ($< 5$) |
+| `2.0` / `1.0` | $2.000$ | `Gasoso`  / $2.00$| Limite exato inferior ($\ge 2$) |
+| `1.999` / `1.0` | $1.999$ | `Gelado` / $1.99$ | Logo abaixo do limite inferior ($< 2$) |
 
 ---
 
