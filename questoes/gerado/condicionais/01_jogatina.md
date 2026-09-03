@@ -1,8 +1,8 @@
 # 1. Título
-Jogatina na Vila
+Jogatina na Villa
 
 ## 2. Enunciado
-Astolfo quer alugar um jogo de tabuleiro na Vila Ludos da universidade. Ele precisa verificar se as moedas do seu bolso pagam o custo.
+Astolfo quer alugar um jogo de tabuleiro na Villa Ludos da universidade. Ele precisa verificar se as moedas do seu bolso pagam o custo.
 
 Escreva um programa que leia as seguintes entradas:
 * *Dinheiro no bolso* (em reais)
