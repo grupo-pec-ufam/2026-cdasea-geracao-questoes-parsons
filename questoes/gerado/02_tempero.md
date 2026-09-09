@@ -1,39 +1,28 @@
-1. Título: Validação do Tempero
-Verificação de ingredientes para o sistema de cozinha inteligente.
+### 1. Título: Enigma da Esfinge
 
-2. Enunciado:
-Zabelê está preparando um prato e o sistema da cozinha inteligente precisa verificar se o tempero principal inserido foi a páprica, para garantir o sabor ideal da receita. Escreva um programa que leia o nome do tempero, compare a palavra inserida e informe o status da receita.
+teste teste teste de integração
 
-Entrada: um texto representando o nome do tempero.
+---
 
-Saída: Receita salva. se o tempero for igual a "paprica"; Falta sabor. se o tempero for diferente.
+### 2. Enunciado:
 
-Tópico: Estrutura condicional composta (if/else).
+A Esfinge propõe um enigma a Cleópatra: ela deve adivinhar um número secreto entre 1 e 10. O número secreto é 7. Escreva um programa que leia o palpite de Cleópatra e informe se ela acertou, se o palpite foi muito alto ou muito baixo.
 
-3. Solução:
-Python
-tempero = input("Tempero: ")
-if tempero == "paprica":
-    print("Receita salva.")
+Entrada: um numero inteiro (1 a 10).
+
+Saída: Acertou se palpite igual a 7; Muito alto se palpite > 7; Muito baixo se palpite < 7.
+
+Tópico: Condicional encadeada com if/elif/else.
+
+---
+
+### 3. Solução:
+
+```python
+palpite = int(input("Palpite: "))
+if palpite == 7:
+    print("Acertou")
+elif palpite > 7:
+    print("Muito alto")
 else:
-    print("Falta sabor.")
-5. Casos de teste:
-Públicos:
-Entrada: paprica -> Saída: Receita salva. (ramo if, igualdade exata)
-Entrada: sal -> Saída: Falta sabor. (ramo else, palavra diferente)
-Entrada: oregano -> Saída: Falta sabor. (ramo else, palavra diferente)
-
-Privados:
-Entrada: Paprica -> Saída: Falta sabor. (ramo else, case sensitive)
-Entrada: paprica  -> Saída: Falta sabor. (ramo else, espaço extra no final)
-Entrada: pimenta -> Saída: Falta sabor. (ramo else)
-
-6. Distratores:
-Python
-if tempero = "paprica":    # DISTRATOR do fragmento 'if tempero == "paprica":' | Concepção 1: atribuição (=) no lugar de ==
-7. Dicas de resolução:
-Use == para comparar igualdade exata.
-Lembre-se de que letras maiúsculas e minúsculas são tratadas como caracteres diferentes em Python.
-
-8. Tópicos abordados:
-Condicional composta (if/else), Operadores relacionais, Comparação de strings.
+    print("Muito baixo")
