@@ -6,7 +6,7 @@ Verificação de ingredientes para o sistema de cozinha inteligente.
 
 ### 2. Enunciado:
 
-Zabelê está preparando um prato e o sistema da cozinha inteligente precisa verificar se o tempero principal inserido foi a páprica, para garantir o sabor ideal da receita. Escreva um programa que leia o nome do tempero, compare a palavra inserida e informe o status da receita.
+Maria está preparando um prato e o sistema da cozinha inteligente precisa verificar se o tempero principal inserido foi a páprica, para garantir o sabor ideal da receita. Escreva um programa que leia o nome do tempero, compare a palavra inserida e informe o status da receita.
 
 Entrada: um texto representando o nome do tempero.
 
@@ -31,19 +31,25 @@ else:
 ### 5. Casos de teste:
 Públicos:
 
-Entrada: paprica -> Saída: Receita salva. (ramo if, igualdade exata)
+Entrada: paprica
+Saída: Receita salva. (ramo if, igualdade exata)
 
-Entrada: sal -> Saída: Falta sabor. (ramo else, palavra diferente)
+Entrada: sal
+Saída: Falta sabor. (ramo else, palavra diferente)
 
-Entrada: oregano -> Saída: Falta sabor. (ramo else, palavra diferente)
+Entrada: oregano 
+Saída: Falta sabor. (ramo else, palavra diferente)
 
 Privados:
 
-Entrada: Paprica -> Saída: Falta sabor. (ramo else, case sensitive)
+Entrada: Paprica
+Saída: Falta sabor. (ramo else, case sensitive)
 
-Entrada: paprica  -> Saída: Falta sabor. (ramo else, espaço extra no final)
+Entrada: paprica
+Saída: Falta sabor. (ramo else, espaço extra no final)
 
-Entrada: pimenta -> Saída: Falta sabor. (ramo else)
+Entrada: pimenta
+Saída: Falta sabor. (ramo else)
 
 ---
 
