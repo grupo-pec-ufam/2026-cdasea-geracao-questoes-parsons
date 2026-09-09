@@ -39,20 +39,14 @@ Se a palavra for exatamente igual, o programa entra no bloco do `if` e imprime "
 ### 5. Casos de teste:
 
 **Públicos:**
-
-| Entrada | Saída Esperada | Justificativa / Ramo |
-| :--- | :--- | :--- |
-| `paprica` | `Receita salva.` | Ramo `if` (igualdade exata) |
-| `sal` | `Falta sabor.` | Ramo `else` (palavra diferente) |
-| `oregano` | `Falta sabor.` | Ramo `else` (palavra diferente) |
+* **Entrada:** `paprica` ➔ **Saída:** `Receita salva.` *(ramo if, igualdade exata)*
+* **Entrada:** `sal` ➔ **Saída:** `Falta sabor.` *(ramo else, palavra diferente)*
+* **Entrada:** `oregano` ➔ **Saída:** `Falta sabor.` *(ramo else, palavra diferente)*
 
 **Privados:**
-
-| Entrada | Saída Esperada | Justificativa / Ramo |
-| :--- | :--- | :--- |
-| `Paprica` | `Falta sabor.` | Ramo `else` (case sensitive) |
-| `paprica ` | `Falta sabor.` | Ramo `else` (espaço extra no final) |
-| `pimenta` | `Falta sabor.` | Ramo `else` (palavra diferente) |
+* **Entrada:** `Paprica` ➔ **Saída:** `Falta sabor.` *(ramo else, case sensitive)*
+* **Entrada:** `paprica ` ➔ **Saída:** `Falta sabor.` *(ramo else, espaço extra no final)*
+* **Entrada:** `pimenta` ➔ **Saída:** `Falta sabor.` *(ramo else, palavra diferente)*
 
 ---
 
