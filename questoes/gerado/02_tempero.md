@@ -39,7 +39,7 @@ Se a palavra for exatamente igual, o programa entra no bloco do if e imprime "Re
 ### 5. Casos de teste:
 Públicos:
 
-Entrada: paprica
+Entrada: paprica  
 Saída: Receita salva. (ramo if, igualdade exata)
 
 Entrada: sal
