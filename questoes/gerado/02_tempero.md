@@ -1,28 +1,26 @@
-### 1. Título: Enigma da Esfinge
+### 1. Título: Validação do Tempero
 
-teste teste teste de integração
+Verificação de ingredientes para o sistema de cozinha inteligente.
 
 ---
 
 ### 2. Enunciado:
 
-A Esfinge propõe um enigma a Cleópatra: ela deve adivinhar um número secreto entre 1 e 10. O número secreto é 7. Escreva um programa que leia o palpite de Cleópatra e informe se ela acertou, se o palpite foi muito alto ou muito baixo.
+Zabelê está preparando um prato e o sistema da cozinha inteligente precisa verificar se o tempero principal inserido foi a páprica, para garantir o sabor ideal da receita. Escreva um programa que leia o nome do tempero, compare a palavra inserida e informe o status da receita.
 
-Entrada: um numero inteiro (1 a 10).
+Entrada: um texto representando o nome do tempero.
 
-Saída: Acertou se palpite igual a 7; Muito alto se palpite > 7; Muito baixo se palpite < 7.
+Saída: Receita salva. se o tempero for igual a "paprica"; Falta sabor. se o tempero for diferente.
 
-Tópico: Condicional encadeada com if/elif/else.
+Tópico: Estrutura condicional composta (if/else).
 
 ---
 
 ### 3. Solução:
 
 ```python
-palpite = int(input("Palpite: "))
-if palpite == 7:
-    print("Acertou")
-elif palpite > 7:
-    print("Muito alto")
+tempero = input("Tempero: ")
+if tempero == "paprica":
+    print("Receita salva.")
 else:
-    print("Muito baixo")
+    print("Falta sabor.")
