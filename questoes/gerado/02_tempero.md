@@ -29,10 +29,10 @@ else:
 ---
 
 ### 4. Explicação:
-Para resolver este problema, o programa precisa tomar uma decisão com base no texto que o usuário digitar.
-Primeiro, o programa usa a função `input()` para ler o nome do tempero e guarda esse texto na variável tempero.
-Em seguida, a estrutura condicional if verifica se o conteúdo dessa variável é perfeitamente igual à palavra "paprica". Para fazer essa comparação, é obrigatório utilizar o operador de igualdade dupla == (lembre-se: um único = serve apenas para atribuir/guardar um valor na variável, não para comparar).
-Se a palavra for exatamente igual, o programa entra no bloco do if e imprime "Receita salva.". Caso o usuário digite qualquer outra palavra (ou até mesmo "Paprica" com letra maiúscula), a condição do if será falsa. Quando isso acontece, o bloco else (senão) entra em ação automaticamente, imprimindo "Falta sabor.".
+Para resolver este problema, o programa precisa tomar uma decisão com base no texto que o usuário digitar.  
+Primeiro, o programa usa a função `input()` para ler o nome do `tempero` e guarda esse texto na variável tempero.  
+Em seguida, a estrutura condicional `if` verifica se o conteúdo dessa variável é perfeitamente igual à palavra `"paprica"`. Para fazer essa comparação, é obrigatório utilizar o operador de igualdade dupla `==` (lembre-se: um único `=` serve apenas para atribuir/guardar um valor na variável, não para comparar).  
+Se a palavra for exatamente igual, o programa entra no bloco do `if` e imprime "Receita salva.". Caso o usuário digite qualquer outra palavra (ou até mesmo "Paprica" com letra maiúscula), a condição do `if` será falsa. Quando isso acontece, o bloco `else` (senão) entra em ação automaticamente, imprimindo "Falta sabor.".
 
 ---
 
