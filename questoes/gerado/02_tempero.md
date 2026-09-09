@@ -47,9 +47,11 @@ Entrada: pimenta -> Saída: Falta sabor. (ramo else)
 
 ---
 
-6. Distratores:
+### 6. Distratores:
 
+```python
 if tempero = "paprica":    # DISTRATOR do fragmento 'if tempero == "paprica":' | Concepção 1: atribuição (=) no lugar de ==
+````
 
 ---
 
