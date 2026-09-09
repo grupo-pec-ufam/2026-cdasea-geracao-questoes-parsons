@@ -24,6 +24,7 @@ if tempero == "paprica":
     print("Receita salva.")
 else:
     print("Falta sabor.")
+````
 
 ---
 
