@@ -42,21 +42,21 @@ Públicos:
 Entrada: paprica  
 Saída: Receita salva. (ramo if, igualdade exata)
 
-Entrada: sal
+Entrada: sal  
 Saída: Falta sabor. (ramo else, palavra diferente)
 
-Entrada: oregano 
+Entrada: oregano   
 Saída: Falta sabor. (ramo else, palavra diferente)
 
 Privados:
 
-Entrada: Paprica
+Entrada: Paprica  
 Saída: Falta sabor. (ramo else, case sensitive)
 
-Entrada: paprica
+Entrada: paprica  
 Saída: Falta sabor. (ramo else, espaço extra no final)
 
-Entrada: pimenta
+Entrada: pimenta  
 Saída: Falta sabor. (ramo else)
 
 ---
