@@ -1,5 +1,4 @@
 Matricula Optativa UFAM
-Enunciado:
 
 Um estudante de Engenharia de Computação da UFAM quer se matricular em uma disciplina optativa avançada. A coordenação só libera a matrícula se o estudante tiver nota mínima em Cálculo e frequência mínima no semestre anterior.
 
