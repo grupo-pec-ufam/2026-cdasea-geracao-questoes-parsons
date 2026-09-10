@@ -1,6 +1,6 @@
 
 ## 1. Título
-`Classificacao de Exoplaneta`
+`ME3 Classificacao de Exoplaneta`
 
 ---
 
@@ -18,13 +18,13 @@ Escreva um programa que leia a massa e o raio  de um exoplaneta, calcule sua den
 ### Fórmula
 $$ densidade = \frac{massa}{raio^3}$$
 
-**Entradas:**
+**Entrada:**
 1. `massa` (float): Massa do exoplaneta em relação à Terra.
 2. `raio` (float): Raio do exoplaneta em relação à Terra.
 
 **Saída:**
-* A classificação do exoplaneta (`Rochoso`, `Gasoso` ou `Gelado`).
-* A densidade do exoplaneta arredondada para 2 casas decimais
+1. A classificação do exoplaneta (`Rochoso`, `Gasoso` ou `Gelado`).
+2.  A densidade do exoplaneta arredondada para 2 casas decimais
 
 ## 4. Solução de Referência (Python)
 
