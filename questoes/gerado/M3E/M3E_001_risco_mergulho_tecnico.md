@@ -1,6 +1,5 @@
-Questão M3E — Elaborada
-Título: Risco de Mergulho Tecnico
-Enunciado:
+Risco de Mergulho Tecnico
+
 Uma equipe de mergulho técnico monitora o risco de descompressão de um mergulhador durante uma expedição em cavernas submersas. O risco depende da profundidade atingida e do tempo total de permanência submerso.
 
 Escreva um programa que leia a profundidade atingida e o tempo de mergulho, calcule o índice de risco de descompressão e classifique a situação do mergulhador.
