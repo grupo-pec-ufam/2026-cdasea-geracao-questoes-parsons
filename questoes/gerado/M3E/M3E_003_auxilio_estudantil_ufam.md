@@ -1,6 +1,7 @@
-Questão M3E — Elaborada
+Questão M3E
 Título: Auxilio Estudantil UFAM
 Enunciado:
+
 A Pró-Reitoria de Assuntos Estudantis da UFAM concede auxílios financeiros com base na renda per capita familiar do estudante. Quanto menor a renda, maior o valor do auxílio.
 Escreva um programa que leia a renda familiar total e o número de pessoas na família, calcule a renda per capita e determine o valor do auxílio concedido.
 A fórmula é:
