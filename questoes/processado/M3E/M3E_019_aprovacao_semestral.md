@@ -11,8 +11,6 @@ Escreva um programa que leia a nota final e a frequência do estudante e informe
 - Se a nota for maior ou igual a 5 e a frequência maior ou igual a 75, imprima `Aprovado para exame final.`;
 - Caso contrário, imprima `Reprovado no período.`
 
-
-
 **Entrada:**
 1. A primeira linha corresponde a nota final do estudante.
 2. A segunda linha corresponde a frequência inteira do estudante, em porcentagem.
@@ -48,17 +46,17 @@ Privados:
 - Entrada: `8.0` / `50` -> Saída: `Reprovado no período.` / `8.0` (ramo else, nota alta mas frequência insuficiente)
 - Entrada: `5.0` / `75` -> Saída: `Aprovado para exame final.` / `5.0` (ramo elif, borda nota=5)
 
-**6. Distratores (marcados):**
+**5. Distratores (marcados):**
 
 ``` python
 if nota >= 7 or frequencia >= 75:      # DISTRATOR do fragmento "if nota >= 7 and frequencia >= 75:" | Concepção 7: lógica booleana trocada (or no lugar de and)
 print("Aprovado direto.")              # DISTRATOR do fragmento "print(round(nota, 1))" | Concepção 10: efeito colateral no ramo errado
 ```
 
-**7. Dicas de resolução:**
+**6. Dicas de resolução:**
 
 `float()` converte o texto retornado por `input()` em número real, permitindo casas decimais. O operador `and` combina duas condições, exigindo que ambas sejam verdadeiras. `round(valor, 1)` arredonda o número para uma casa decimal.
 
-**8. Tópicos abordados:**
+**7. Tópicos abordados:**
 
 Operadores lógicos (and); Arredondamento com round(); Conversão de tipos (float).

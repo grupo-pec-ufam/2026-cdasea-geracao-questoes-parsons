@@ -49,7 +49,7 @@ Públicos:
 Privados:
 - Entrada: `10` / `5` -> Saída: `Compra autorizada.` / `10` (ramo elif, borda creditos=custo)
 - Entrada: `9` / `5` -> Saída: `Créditos insuficientes.` / `10` (ramo else, borda logo abaixo do custo)
-- Entrada: `0` / `0` -> Saída: `Nenhuma refeição selecionada.` / `0` (ramo if, créditos também zerados)
+- Entrada: `0` / `0` -> Saída: `Nenhuma refeição selecionada.` / `0` (ramo if, custo também zerado)
 
 **5. Distratores (marcados):**
 
