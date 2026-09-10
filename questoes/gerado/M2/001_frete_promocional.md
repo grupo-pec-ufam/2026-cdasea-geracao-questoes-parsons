@@ -41,12 +41,15 @@ valor = float(input("Valor (R$): "))
 else:
 print("Frete padrao")
 print("Frete gratuito")
-Distratores
+```
+
+## 7. Distratores:
+```python
 else valor < 150.00: (Relativo à linha 4 | Concepção: else tratado como se aceitasse
 condição)
 if valor > 150.00: (Relativo à linha 2 | Concepção: Operador de comparação com erro
 de borda)
 ```
-## 7. Dicas de resolução
+## 8. Dicas de resolução
 Estruturas if/else são usadas para decisões mutuamente exclusivas. O else funciona como o
 "caso contrário" e nunca recebe uma verificação matemática própria, devendo possuir apenas os :.
