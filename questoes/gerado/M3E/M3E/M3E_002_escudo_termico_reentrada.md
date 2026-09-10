@@ -1,0 +1,94 @@
+# Questão M3E_002 — Elaborada
+
+## 1. Título
+
+`Escudo Termico Reentrada`
+
+## 2. Enunciado
+
+Durante a reentrada atmosférica de uma cápsula espacial, o escudo térmico precisa suportar o atrito gerado pela velocidade de queda. Quanto maior a velocidade e menor a altitude, maior o aquecimento na superfície da cápsula.
+
+Escreva um programa que leia a velocidade de reentrada e a altitude atual, calcule o índice de aquecimento do escudo térmico e classifique sua condição.
+
+**A fórmula é:**
+
+$$aquecimento = \frac{velocidade^2}{altitude}$$
+
+**Classificação:**
+
+- aquecimento maior ou igual a 500: `Escudo em risco`
+- aquecimento maior ou igual a 200 e menor que 500: `Escudo aquecido`
+- caso contrário (menor que 200): `Escudo estavel`
+
+**O programa deve ler:**
+
+1. A velocidade de reentrada, em km/s (número real).
+2. A altitude atual, em km (número real, estritamente positiva).
+
+**Como saída, o programa deve imprimir:**
+
+1. A classificação do escudo (`Escudo em risco`, `Escudo aquecido` ou `Escudo estavel`).
+2. O aquecimento calculado, arredondado em duas casas decimais.
+
+**Tópico:** Estrutura condicional encadeada (`if`/`elif`/`else`).
+
+## 3. Solução de referência
+
+```python
+velocidade = float(input("velocidade: "))
+altitude = float(input("altitude: "))
+aquecimento = (velocidade ** 2) / altitude
+if aquecimento >= 500:
+    print("Escudo em risco")
+elif aquecimento >= 200:
+    print("Escudo aquecido")
+else:
+    print("Escudo estavel")
+print(round(aquecimento, 2))
+```
+
+## 4. Explicação passo a passo
+
+1. `velocidade = float(...)`: converte a velocidade lida para número real.
+2. `altitude = float(...)`: converte a altitude lida para número real.
+3. `aquecimento = (velocidade ** 2) / altitude`: aplica a fórmula, elevando a velocidade ao quadrado com `**` antes de dividir pela altitude.
+4. `if aquecimento >= 500:`: testa o ramo mais crítico primeiro.
+5. `elif aquecimento >= 200:`: avaliado apenas se o `if` anterior for falso, mantendo os ramos mutuamente exclusivos.
+6. `else:`: cobre todos os valores restantes (aquecimento menor que 200).
+7. `print(round(aquecimento, 2))`: imprime o índice calculado, fora do condicional.
+
+O programa pressupõe `altitude > 0` e não trata entradas inválidas.
+
+## 5. Casos de teste
+
+**Públicos:**
+
+| Velocidade | Altitude | Aquecimento | Saída esperada | Observação |
+|---|---|---|---|---|
+| 100 | 10 | 1000.0 | `Escudo em risco` / `1000.0` | ramo if |
+| 100 | 40 | 250.0 | `Escudo aquecido` / `250.0` | ramo elif |
+| 100 | 100 | 100.0 | `Escudo estavel` / `100.0` | ramo else |
+
+**Privados:**
+
+| Velocidade | Altitude | Aquecimento | Saída esperada | Observação |
+|---|---|---|---|---|
+| 100 | 20 | 500.0 | `Escudo em risco` / `500.0` | borda ≥500 |
+| 100 | 20.0004 | ≈499.99 | `Escudo aquecido` / `499.99` | logo abaixo de 500 |
+| 100 | 50 | 200.0 | `Escudo aquecido` / `200.0` | borda ≥200 |
+| 100 | 50.0025 | ≈199.99 | `Escudo estavel` / `199.99` | logo abaixo de 200 |
+
+## 6. Distratores (marcados)
+
+```python
+if aquecimento > 500:                              # DISTRATOR de "if aquecimento >= 500:" | Concepção 2: erro de borda (> no lugar de >=)
+aquecimento = (velocidade ** 2) // altitude        # DISTRATOR de "aquecimento = (velocidade ** 2) / altitude" | Concepção 8: confusão entre operadores de divisão (// no lugar de /)
+```
+
+## 7. Dicas de resolução
+
+O operador `**` calcula potenciação. Use `>=` quando o valor limite pertence ao próprio ramo da condição. `/` faz divisão real, diferente de `//` (divisão inteira).
+
+## 8. Tópicos abordados
+
+- M3E – Estruturas condicionais encadeadas (elif)
