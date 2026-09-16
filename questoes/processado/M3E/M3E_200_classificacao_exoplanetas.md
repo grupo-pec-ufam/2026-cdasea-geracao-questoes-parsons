@@ -1,32 +1,32 @@
+# ME3 Classificacao de Exoplaneta
 
-## 1. Título
-`ME3 Classificacao de Exoplaneta`
+## Enunciado
 
----
+Cientistas classificam exoplanetas com base em sua densidade média relativa, calculada dividindo-se a massa pelo cubo do raio do planeta.
 
-## 2. Enunciado
+Escreva um programa que leia a massa e o raio de um exoplaneta, calcule sua densidade e imprima a classificação correspondente e a densidade.
 
-Cientistas classificam exoplanetas com base em sua densidade média relativa, calculada dividindo-se a massa pelo cubo do raio do planeta. 
-Escreva um programa que leia a massa e o raio  de um exoplaneta, calcule sua densidade e imprima a classificação correspondente e a densidade.
+A classificação deve seguir as seguintes regras:
 
-**cassificação:**
+* densidade maior ou igual a 5: `Rochoso`
+* densidade maior ou igual a 2 e menor que 5: `Gasoso`
+* densidade menor que 2: `Gelado`
 
-* **densidade maior ou igual a 5**: `Rochoso`
-* **densidade maior ou igual a 2 e menor que 5**: `Gasoso`
-* **caso contrário (menor que 2)**: `Gelado`
+A densidade deve ser calculada pela fórmula:
 
-### Fórmula
-$$ densidade = \frac{massa}{raio^3}$$
+`densidade = massa / (raio ** 3)`
 
-**Entrada:**
-1. `massa` (float): Massa do exoplaneta em relação à Terra.
-2. `raio` (float): Raio do exoplaneta em relação à Terra.
+### Entrada
 
-**Saída:**
+1. massa (float): massa do exoplaneta em relação à Terra.
+2. raio (float): raio do exoplaneta em relação à Terra.
+
+### Saída
+
 1. A classificação do exoplaneta (`Rochoso`, `Gasoso` ou `Gelado`).
-2.  A densidade do exoplaneta arredondada para 2 casas decimais
+2. A densidade do exoplaneta arredondada para 2 casas decimais.
 
-## 4. Solução de Referência (Python)
+## Solução de Referência (Python)
 
 ```python
 massa = float(input("massa: "))
@@ -41,30 +41,31 @@ elif densidade >= 2:
 else:
     print("Gelado")
 
-print(round(densidade,2))
+print(round(densidade, 2))
 ```
 
-## 4. *Observação:* 
-O programa pressupõe entradas válidas com raio estritamente positivo (raio>0).
+## Observação
 
----
+O programa pressupõe entradas válidas com raio estritamente positivo (raio > 0).
 
-## 6. Casos de Teste
+## Casos de Teste
 
 ### Públicos
-| Entrada (`massa` / `raio`) | Densidade Calculada | Saída Esperada | Ramo Executado |
-| :--- | :--- | :--- | :--- |
-| `10.0` / `1.0` | $10.000$  | `Rochoso` / $10.00$ | `if` ($\ge 5$) |
-| `2.5` / `1.0` | $2.500$ | `Gasoso` / $2.50$ | `elif` ($\ge 2$) |
-| `5.0` / `1.5` | $1.481$ | `Gelado` / $1.48$ | `else` ($< 2$) |
 
-### Privados (Testes de Borda)
-| Entrada (`massa` / `raio`) | Densidade Calculada | Saída Esperada | Observação / Limite |
-| :--- | :--- | :--- | :--- |
-| `5.0` / `1.0` | $5.000$ | `Rochoso` / $5.00$ | Limite exato superior ($\ge 5$) |
-| `4.999` / `1.0` | $4.999$ | `Gasoso` / $4.99$ | Logo abaixo do limite superior ($< 5$) |
-| `2.0` / `1.0` | $2.000$ | `Gasoso`  / $2.00$| Limite exato inferior ($\ge 2$) |
-| `1.999` / `1.0` | $1.999$ | `Gelado` / $1.99$ | Logo abaixo do limite inferior ($< 2$) |
+| Entrada      | Saída            |
+| ------------ | ---------------- |
+| `10.0` `1.0` | `Rochoso` `10.0` |
+| `2.5` `1.0`  | `Gasoso` `2.5`   |
+| `5.0` `1.5`  | `Gelado` `1.48`  |
+
+### Privados
+
+| Entrada       | Saída           |
+| ------------- | --------------- |
+| `5.0` `1.0`   | `Rochoso` `5.0` |
+| `4.999` `1.0` | `Gasoso` `5.0`  |
+| `2.0` `1.0`   | `Gasoso` `2.0`  |
+| `1.999` `1.0` | `Gelado` `2.0`  |
 
 ---
 
