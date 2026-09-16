@@ -1,63 +1,67 @@
+# M3E Créditos do RU
 
-**1. Título:**
-
-`M3E Créditos do RU`
-
-**2. Enunciado:**
+## Enunciado
 
 Um estudante da UFAM chega ao RU e quer saber se seus créditos são suficientes para retirar as refeições desejadas.
 
 Escreva um programa que leia os créditos disponíveis e a quantidade de refeições desejadas e informe o status da tentativa de compra e o custo total das refeições.
 
-`C = Q * 2`
+Cada refeição custa 2 créditos. O custo total deve ser calculado pela fórmula:
 
+`custo = quantidade * 2`
 
-\(C\) é o custo total em créditos e \(Q\) é a quantidade de refeições desejadas, cada uma custando 2 créditos.
+Se o custo total for igual a zero, imprima `Nenhuma refeição selecionada.`
 
-se o custo total for igual a zero, imprima `Nenhuma refeição selecionada.`; se os créditos forem suficientes para cobrir o custo, imprima `Compra autorizada.`; caso contrário, imprima `Créditos insuficientes.`.
+Se os créditos forem suficientes para cobrir o custo, imprima `Compra autorizada.`
 
-**Entrada:**
-1. O primeiro lavor representa os créditos disponíveis.
-2. O segundo valor representa a quantidade de refeições desejadas.
+Caso contrário, imprima `Créditos insuficientes.`
 
-**Saída:** 
-1. A primeira linha corresponde ao status da compra.
-2. A segunda linha corresponde ao custo da compra desejada.
+### Entrada
 
-**3. Solução de referência:**
+1. Créditos disponíveis.
+2. Quantidade de refeições desejadas.
+
+### Saída
+
+1. O status da compra.
+2. O custo total da compra.
+
+## Solução de Referência (Python)
 
 ```python
 creditos = int(input("Créditos: "))
+
 quantidade = int(input("Quantidade: "))
+
 custo = quantidade * 2
+
 if custo == 0:
     print("Nenhuma refeição selecionada.")
 elif creditos >= custo:
     print("Compra autorizada.")
 else:
     print("Créditos insuficientes.")
+
 print(custo)
 ```
 
-**4. Casos de teste:**
+## Casos de Teste
 
-Públicos:
-- Entrada: `20` / `0` -> Saída: `Nenhuma refeição selecionada.` / `0` (ramo if)
-- Entrada: `20` / `5` -> Saída: `Compra autorizada.` / `10` (ramo elif)
-- Entrada: `5` / `5` -> Saída: `Créditos insuficientes.` / `10` (ramo else)
+### Públicos
 
-Privados:
-- Entrada: `10` / `5` -> Saída: `Compra autorizada.` / `10` (ramo elif, borda creditos=custo)
-- Entrada: `9` / `5` -> Saída: `Créditos insuficientes.` / `10` (ramo else, borda logo abaixo do custo)
-- Entrada: `0` / `0` -> Saída: `Nenhuma refeição selecionada.` / `0` (ramo if, custo também zerado)
+| Entrada  | Saída                               |
+| -------- | ----------------------------------- |
+| `20` `0` | `Nenhuma refeição selecionada.` `0` |
+| `20` `5` | `Compra autorizada.` `10`           |
+| `5` `5`  | `Créditos insuficientes.` `10`      |
 
-**5. Distratores (marcados):**
+### Privados
 
-```python
-creditos = input("Créditos: ")   # DISTRATOR do fragmento "creditos = int(input(\"Créditos: \"))" | Concepção 8: conversão de tipo ausente
-print(creditos)      # DISTRATOR do fragmento "print(custo)" | Concepção 10: efeito colateral no ramo errado
-```
-
+| Entrada  | Saída                               |
+| -------- | ----------------------------------- |
+| `10` `5` | `Compra autorizada.` `10`           |
+| `9` `5`  | `Créditos insuficientes.` `10`      |
+| `0` `0`  | `Nenhuma refeição selecionada.` `0` |
 
 **6. Tópicos abordados:**
 
