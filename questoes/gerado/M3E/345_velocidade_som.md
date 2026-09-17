@@ -1,7 +1,9 @@
-18. Título: Velocidade do Som
+### 1. Título: Velocidade do Som
 Formatação de condicionais alocadas em tramas aerodinâmicas da ciência.
 
-2. Enunciado:
+---
+
+### 2. Enunciado:
 Engenheiros de aviônica avaliam aeronaves pela distância percorrida e tempo efetuado de voo. A velocidade do som na atmosfera terrestre é padronizada rigorosamente como 343.0 metros por segundo.
 
 Entradas: um número decimal com a distância em metros e um decimal com a medição do tempo marcado em segundos.
@@ -10,8 +12,10 @@ Saída: se a velocidade da aeronave for estritamente maior que 343.0, imprima Vo
 
 Tópico: Condicionais encadeadas (if/elif/else).
 
-3. Solução:
-Python
+---
+
+### 3. Solução:
+```python
 dist = float(input("Distancia (m): "))
 tempo = float(input("Tempo (s): "))
 vel = dist / tempo
@@ -21,34 +25,87 @@ elif vel == 343.0:
     print("Estouro da barreira.")
 else:
     print("Voo subsonico.")
-4. Explicação:
-Esta é uma questão de nível Médio. Ela une uma formulação aritmética simples com as extremidades dos tipos relacionais matemáticos da tricotomia (maior, igual, menor).
+```
 
-Tendo finalizado a alocação do cálculo da vel, a verificação em cadeia adentra na busca. O if engole qualquer ponto flutuante super-rápido (>). O elif isola perfeitamente os bravos voos que atingiram a igualdade extrema (==). Conclusão lógica: se o avião não andou mais rápido que o limite e não correu exatamente na marca limite, o resgate obrigatório do else avisa da normalidade.
+---
 
-5. Casos de teste:
-Públicos:
+### 4. Casos de teste:
+**Públicos:**
 
-Entradas: 400.0 e 1.0 ➔ Saída: Voo supersonico. (ramo if)
+Entrada:
 
-Entradas: 343.0 e 1.0 ➔ Saída: Estouro da barreira. (ramo elif, bate no limite certinho exato)
+```text
+400.0
+1.0
+```
+Saída:
 
-Entradas: 100.0 e 2.0 ➔ Saída: Voo subsonico. (ramo else)
+```text
+Voo supersonico.
+```
+Entrada:
 
-Privados:
+```text
+343.0
+1.0
+```
+Saída:
 
-Entradas: 686.0 e 2.0 ➔ Saída: Estouro da barreira. (ramo elif, borda com cálculo mascarado nas proporções)
+```text
+Estouro da barreira.
+```
+Entrada:
 
-Entradas: 343.1 e 1.0 ➔ Saída: Voo supersonico. (ramo if, rompimento sutil)
+```text
+100.0
+2.0
+```
+Saída:
 
-Entradas: 342.9 e 1.0 ➔ Saída: Voo subsonico. (ramo else, tentativa frustrada falha abaixo do som)
+```text
+Voo subsonico.
+```
 
-6. Distratores:
-Python
+**Privados:**
+
+Entrada:
+
+```text
+686.0
+2.0
+```
+Saída:
+
+```text
+Estouro da barreira.
+```
+Entrada:
+
+```text
+343.1
+1.0
+```
+Saída:
+
+```text
+Voo supersonico.
+```
+Entrada:
+
+```text
+342.9
+1.0
+```
+Saída:
+
+```text
+Voo subsonico.
+```
+
+---
+
+5. Distratores:
+```python
 vel = dist // tempo    # DISTRATOR do fragmento 'vel = dist / tempo' | Concepção 8: Confusão entre os sinais de operadores matemáticos, aplicando a divisão inteira (//) em um voo de decimais sensíveis.
 elif vel = 343.0:      # DISTRATOR do fragmento 'elif vel == 343.0:' | Concepção 1: Atribuição (=) em vez de comparador de igualdade (==).
-7. Dicas de resolução:
-Quando a divisão requer cálculos que mantém e honram as casas decimais flutuantes do usuário não se limite ou invente métodos. A barra simples (/) do divisor de pontuação cuidará do resultado perfeito.
-
-8. Tópicos abordados:
-Variáveis, Operadores aritméticos, Condicionais encadeadas (elif).
+```
