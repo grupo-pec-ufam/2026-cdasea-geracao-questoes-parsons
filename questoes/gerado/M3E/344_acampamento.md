@@ -30,7 +30,7 @@ print("Bem-vindo ao acampamento.")
 
 ---
 
-### 5. Casos de teste:
+### 4. Casos de teste:
 **Públicos:**
 
 Entrada:
@@ -120,7 +120,7 @@ Bem-vindo ao acampamento.
 ```
 ---
 
-### 6. Distratores:
+### 5. Distratores:
 ```python
 elif total > 100:
 # DISTRATOR do fragmento 'elif total >= 100:' | Concepção 2: erro de borda (> em vez de >=), enviando guerreiros nota 100 para o chalé inferior.
