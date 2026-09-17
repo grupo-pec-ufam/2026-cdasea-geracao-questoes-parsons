@@ -84,6 +84,7 @@ Saída:
 ```text
 Promocao aplicada.
 27.0
+```
 
 **Privados:**
 
