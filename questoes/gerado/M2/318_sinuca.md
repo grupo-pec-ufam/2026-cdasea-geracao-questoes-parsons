@@ -40,52 +40,103 @@ print(round(final, 2))
 
 ---
 
-### 4. Explicação:
-Esta questão é classificada como de nível médio porque exige que o aluno gerencie diferentes tipos de dados matemáticos (`int` para tempo e `float` para tarifa) 
-e mantenha o controle do estado de uma variável ao longo do programa. Primeiro, as entradas são convertidas e multiplicadas para descobrir o `custo` base. 
-A estrutura condicional `f` verifica se esse custo é estritamente maior que 30.0. Se for, além de imprimir a mensagem de promoção, o aluno precisa realizar 
-um cálculo matemático dentro do bloco `if` (`final = custo - 5.0`). 
-Se a condição for falsa, o fluxo vai para o `else`, onde o valor permanece intacto (`final = custo`). 
-O último desafio é aplicar a função embutida `round()` fora da estrutura condicional, garantindo que, independentemente do caminho escolhido pelo `if/else`, 
-o programa devolva um valor financeiro formatado corretamente com duas casas decimais no final.
-
----
-
-### 5. Casos de teste:
+### 4. Casos de teste:
 
 **Públicos:**
-* **Entrada:** `100` e `0.50` ➔ **Saída:** `Promocao aplicada.` e `45.0` *(ramo if, custo inicial 50.0 sofre redução de 5)*
-* **Entrada:** `60` e `0.50` ➔ **Saída:** `Preco normal.` e `30.0` *(ramo else, custo inicial bate exatamente na borda de 30.0, sem desconto)*
-* **Entrada:** `40` e `0.80` ➔ **Saída:** `Promocao aplicada.` e `27.0` *(ramo if, custo inicial 32.0 ganha desconto)*
+
+Entrada:
+
+```text
+100
+0.50
+```
+
+Saída:
+
+```text
+Promocao aplicada.
+45.0
+```
+
+Entrada:
+
+```text
+60
+0.50
+```
+
+Saída:
+
+```text
+Preco normal.
+30.0
+```
+
+Entrada:
+
+```text
+40
+0.80
+```
+
+Saída:
+
+```text
+Promocao aplicada.
+27.0
 
 **Privados:**
-* **Entrada:** `61` e `0.50` ➔ **Saída:** `Promocao aplicada.` e `25.5` *(ramo if, valor ultrapassa a borda por muito pouco)*
-* **Entrada:** `10` e `1.25` ➔ **Saída:** `Preco normal.` e `12.5` *(ramo else, valor baixo sem promoção)*
-* **Entrada:** `0` e `2.00` ➔ **Saída:** `Preco normal.` e `0.0` *(ramo else, tempo zerado)*
 
----
+Entrada:
 
-### 6. Distratores:
+```text
+61
+0.50
+```
 
-```python
-tarifa = int(input("Tarifa (R$): "))  
-# DISTRATOR do fragmento 'tarifa = float(input(...))' | Concepção 1: conversão para o tipo errado, tratando moeda (que exige decimais) 
-como número inteiro (causando ValueError).
+Saída:
 
-if custo >= 30.0:                     
-# DISTRATOR do fragmento 'if custo > 30.0:' | Concepção 2: erro de borda. Inclui incorretamente o valor 30 na regra de desconto, 
-quando o enunciado diz "ultrapassar 30".
+```text
+Promocao aplicada.
+25.5
+```
+
+Entrada:
+
+```text
+10
+1.25
+```
+
+Saída:
+
+```text
+Preco normal.
+12.5
+```
+
+Entrada:
+
+```text
+0
+2.00
+```
+
+Saída:
+
+```text
+Preco normal.
+0.0
 ```
 
 ---
 
-### 7. Dicas de resolução:
-Leia atentamente as unidades exigidas: o tempo é um valor exato (inteiro), enquanto o dinheiro requer precisão decimal (float). 
-Certifique-se de usar int() e float() corretamente.
-Crie uma nova variável (como final) dentro de cada ramo do if/else para guardar o resultado, facilitando o uso da função round(variavel, 2) 
-apenas uma única vez na última linha do programa.
+### 5. Distratores:
 
----
+```python
+tarifa = int(input("Tarifa (R$): "))  
+# DISTRATOR do fragmento 'tarifa = float(input(...))' | Concepção 1: conversão para o tipo errado, tratando moeda (que exige decimais) como número inteiro (causando ValueError).
 
-### 8. Tópicos abordados:
-Tipos de dados básicos, Variáveis, Operadores aritméticos, Condicional composta (if/else), Operações de entrada e saída.
+if custo >= 30.0:                     
+# DISTRATOR do fragmento 'if custo > 30.0:' | Concepção 2: erro de borda. Inclui incorretamente o valor 30 na regra de desconto, quando o enunciado diz "ultrapassar 30".
+```
