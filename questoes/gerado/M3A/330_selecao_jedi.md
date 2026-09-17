@@ -39,14 +39,87 @@ O bloco `if` externo avalia a quantidade estritamente maior que 10000. O `else` 
 ### 5. Casos de teste:
 
 **Públicos:**
-* **Entradas:** `12000` e `1` ➔ **Saída:** `Novo Padawan.` *(ramo if externo, if interno)*
-* **Entradas:** `15000` e `2` ➔ **Saída:** `Risco de lado sombrio.` *(ramo if externo, else interno)*
-* **Entradas:** `9000` e `1` ➔ **Saída:** `Treinamento negado.` *(ramo else externo)*
+
+Entrada:
+
+```text
+12000
+1
+```
+
+Saída:
+
+```text
+Novo Padawan.
+```
+
+Entrada:
+
+```text
+15000
+2
+```
+
+Saída:
+
+```text
+Risco de lado sombrio.
+```
+
+Entrada:
+
+```text
+9000
+1
+````
+
+Saída:
+
+```text
+Treinamento negado.
+```
 
 **Privados:**
-* **Entradas:** `10000` e `1` ➔ **Saída:** `Treinamento negado.` *(ramo else externo, borda exata)*
-* **Entradas:** `10001` e `2` ➔ **Saída:** `Risco de lado sombrio.` *(ramo if externo, else interno, borda superior)*
-* **Entradas:** `500` e `2` ➔ **Saída:** `Treinamento negado.` *(ramo else externo)*
+
+Entrada:
+
+```text
+10000
+1
+```
+
+Saída:
+
+```text
+Treinamento negado.
+```
+
+Entrada:
+
+```text
+10001
+2
+```
+
+Saída:
+
+```text
+Risco de lado sombrio.
+```
+
+Entrada:
+
+```text
+500
+2
+```
+
+Saída:
+```text
+Treinamento negado.
+```
+
+---
 
 ### 6. Distratores:
 ```python
