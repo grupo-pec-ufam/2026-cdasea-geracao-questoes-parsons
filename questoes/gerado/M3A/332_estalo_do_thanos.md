@@ -28,14 +28,7 @@ else:
 ```
 ---
 
-### 4. Explicação:
-Esta é uma questão de nível Médio. O foco é a exatidão combinada nos testes condicionais, sem uso de margens amplas.
-
-Verificamos primeiro o receptáculo no bloco mais externo (manopla == 1). Sem a manopla, o uso de qualquer joia resulta em erro grave (else externo). Protegido pelo artefato, a condicional interna entra em ação para avaliar se o inventário está perfeitamente completo (joias == 6). Um número diferente aciona imediatamente a saída secundária (o else aninhado).
-
----
-
-### 5. Casos de teste:
+### 4. Casos de teste:
 Públicos:
 
 Entradas: 1 e 6 ➔ Saída: O estalo aconteceu. (ramo if externo, if interno)
@@ -54,20 +47,8 @@ Entradas: 1 e 0 ➔ Saída: Poder incompleto. (ramo if externo, else interno)
 
 ---
 
-### 6. Distratores:
+### 5. Distratores:
 ```python
 else joias != 6:    # DISTRATOR do fragmento 'else:' (interno) | Concepção 4: else tratado como se aceitasse receber uma condição lógica após a palavra-chave.
 if joias == 6       # DISTRATOR do fragmento 'if joias == 6:' | Concepção 3: Ausência dos dois-pontos delimitadores.
 ```
-
----
-
-### 7. Dicas de resolução:
-Para comparar exatidão (ter exatamente 6 de algo), use o operador ==.
-
-As palavras-chave else representam o "todo o resto" lógico. Nunca digite nenhuma regra condicional na mesma linha do else, apenas coloque else:.
-
----
-
-### 8. Tópicos abordados:
-Variáveis, Condicional composta (if/else), Operadores relacionais, Escopo e Indentação de bloco.
