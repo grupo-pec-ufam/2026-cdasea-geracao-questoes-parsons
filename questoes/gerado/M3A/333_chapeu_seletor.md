@@ -63,12 +63,6 @@ if lealdade > 90:   # DISTRATOR do fragmento 'if lealdade >= 90:' | Concepção 
 
 ---
 
-### 7. Dicas de resolução:
-Quando o enunciado utilizar o termo "maior ou igual", a tradução técnica exige a inclusão direta do operador combinado >=.
 
-Mantenha o foco na hierarquia: os testes do chapéu seletor precisam ser feitos um depois do outro, abrindo recuos de texto. O else final pertence ao if do topo (coragem), então não os confunda visualmente.
-
----
-
-### 8. Tópicos abordados:
+### 7. Tópicos abordados:
 Variáveis, Operações de entrada e saída, Condicional composta (if/else), Escopo e Indentação de bloco.
