@@ -25,6 +25,7 @@ elif total >= 100:
     print("Chale de Atena.")
 else:
     print("Chale de Hermes.")
+
 print("Bem-vindo ao acampamento.")
 ```
 
