@@ -40,15 +40,86 @@ A estrutura aninhada se dá pelo `if idade >= 20`. Quem é rejeitado (idade 19 o
 ### 5. Casos de teste:
 
 **Públicos:**
-* **Entradas:** `21` e `3` ➔ **Saída:** `Tropa de Elite.` *(ramo if externo, if interno)*
-* **Entradas:** `20` e `2` ➔ **Saída:** `Infantaria comum.` *(ramo if externo, else interno, borda de idade)*
-* **Entradas:** `18` e `3` ➔ **Saída:** `Ainda em treinamento.` *(ramo else externo)*
+
+Entrada:
+
+```text
+21
+3
+```
+
+Saída:
+
+```text
+Tropa de Elite.
+```
+
+Entrada:
+
+```text
+20
+2
+```
+
+Saída:
+
+```text
+Infantaria comum.
+```
+
+Entrada:
+
+```text
+18
+3
+```
+
+Saída:
+
+```text
+Ainda em treinamento.
+```
 
 **Privados:**
-* **Entradas:** `20` e `3` ➔ **Saída:** `Tropa de Elite.` *(ramo if externo, if interno, borda de idade)*
-* **Entradas:** `19` e `3` ➔ **Saída:** `Ainda em treinamento.` *(ramo else externo, limite inferior de idade)*
-* **Entradas:** `25` e `0` ➔ **Saída:** `Infantaria comum.` *(ramo if externo, else interno)*
 
+Entrada:
+
+```text
+20
+3
+```
+
+Saída:
+
+```text
+Tropa de Elite.
+```
+
+Entrada:
+
+```text
+19
+3
+```
+
+Saída:
+
+```text
+Ainda em treinamento.
+```
+
+Entrada:
+
+```text
+25
+0
+```
+
+Saída:
+
+```text
+Infantaria comum.
+```
 ---
 
 ### 6. Distratores:
