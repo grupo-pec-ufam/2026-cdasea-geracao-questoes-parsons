@@ -194,6 +194,20 @@ else nota_b > nota_a:            # DISTRATOR do fragmento "else:" | Concepção 
 
 ---
 
+## 12. Módulos de IPC
+
+| Módulo | Tema do Módulo | Tópicos de Programação Python |
+| :--- | :--- | :--- |
+| **M1** | Variáveis e programação sequencial | Conceito de variável, identificador e atribuição; regras de nomeação de identificadores; tipos de dados (int, float, bool, str); rastreamento de código (tracing) e comentários (#); entrada e saída de dados (input(), print() com um, nenhum ou múltiplos argumentos); conversão de tipos (int(), float()); estrutura sequencial; operadores aritméticos (+ - * / // % **) e precedência; tratamento de erros (sintaxe, execução; NameError, TypeError, ZeroDivisionError); funções built-in (abs(), int(), float(), max(), min(), round(), len()); módulos e import (módulo math); métodos de string (.upper(), .lower(), .find(), .count()); boas práticas (comentários, nomes de variáveis, indentação de expressões). |
+| **M2** | Estruturas condicionais compostas | Estrutura condicional simples (if) e composta (if/else); sintaxe (dois-pontos e indentação de blocos); condições e valores lógicos (verdadeiro/falso); operadores de comparação/relacionais (== > < >= <= !=); distinção entre = (atribuição) e == (comparação); comparação de strings pela ordem ASCII; comparação entre variáveis de mesmo tipo; negação de condição com inversão de blocos if/else. |
+| **M3E** | Estruturas condicionais encadeadas (elif) | Comando elif (substitui par else/if sem novo nível de indentação); operadores lógicos and, or, not e suas tabelas-verdade; precedência entre operadores (aritméticos, relacionais e lógicos); uso do módulo math em condicionais (ex.: cálculo de delta). |
+| **M3A** | Estruturas condicionais aninhadas (if/if) | Estruturas condicionais aninhadas (if dentro de if/else); operadores lógicos and, or, not e suas tabelas-verdade; precedência entre operadores (aritméticos, relacionais e lógicos); uso do módulo math em condicionais (ex.: cálculo de delta). |
+| **M4** | Repetição por condição | Estruturas de repetição; repetição por condição com while; formato do comando while; distinção while × if; variável contador e variável acumuladora; laços com valores iniciais; interrupção de laço (botão de parada / laço infinito); categorias de repetição (por condição × por contagem, apresentadas comparativamente). |
+| **M5** | Vetores e strings | Listas/vetores: características, criação (lista vazia, inicialização com valores, leitura via teclado), índices e limites, seleção/fatiamento (lista[i], lista[i:j], [:j], [i:]); operações e métodos de lista (append(), insert(), remove(), pop(), index(), count(), sort(), copy(), operador in, concatenação, replicação); cópia por valor × por referência; funções min(), max(), sum(); strings: acesso por índice e fatiamento, imutabilidade, tamanho (len()), conversão string↔número, concatenação, operador in, métodos split() e join(); percurso de listas/strings com while. |
+| **M6** | Repetição por contagem | Estruturas de repetição por contagem com for; formato do comando `for ... in ...:`; função range() com um, dois e três argumentos; iteração sobre sequências; distinção while × for e quando usar cada um; aplicação de for a listas (contadores, acumuladores, contagem de ocorrências, listas de frequência, contagem por categorias). |
+
+---
+
 Objetivo final: gerar **10** Problemas de Parsons completos sobre condicionais em python de nível medio(8 a 13 linhas), conforme todas as instruções passadas e as intruções do documento `roteiro_parsons_codebench_consolidado.md`, sem comentários adicionais ou texto fora do formato especificado.
 
 Boas praticas e template para elaboracao de questoes.docx
