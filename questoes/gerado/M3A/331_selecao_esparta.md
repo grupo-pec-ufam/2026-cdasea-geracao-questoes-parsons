@@ -29,15 +29,7 @@ else:
 
 ---
 
-### 4. Explicação:
-
-Esta é uma questão de nível **Médio**. O aluno lida com o bloqueio de uma ramificação baseado no conceito maior-ou-igual.
-
-A estrutura aninhada se dá pelo `if idade >= 20`. Quem é rejeitado (idade 19 ou menos) cai diretamente no `else` externo. Para os que passam pela barreira da idade, o `if` interno verifica a exatidão dos testes (`testes == 3`). Qualquer valor diferente aciona o `else` interno.
-
----
-
-### 5. Casos de teste:
+### 4. Casos de teste:
 
 **Públicos:**
 
@@ -122,20 +114,8 @@ Infantaria comum.
 ```
 ---
 
-### 6. Distratores:
+### 5. Distratores:
 ```python
 if idade > 20:    # DISTRATOR do fragmento 'if idade >= 20:' | Concepção 2: erro de borda (> no lugar de >=), barrando pessoas que têm exatamente 20 anos.
 if testes = 3:    # DISTRATOR do fragmento 'if testes == 3:' | Concepção 1: atribuição (=) no lugar de igualdade (==).
 ```
-
----
-
-### 7. Dicas de resolução:
-
-Quando a regra fala "atingir 20 anos ou mais", o valor 20 está incluso na verificação. Use `>=`, unindo o sinal de maior ao sinal de igualdade, nesta exata ordem.
-
-Para comparar um número exato de testes (exatamente 3), use a igualdade dupla `==`.
-
----
-### 8. Tópicos abordados:
-Variáveis, Operações de entrada e saída, Condicional composta (if/else), Escopo e Indentação de bloco.
