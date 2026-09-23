@@ -5,19 +5,13 @@ Verificação de energia acumulada para o ataque especial do Thor.
 ---
 
 ### 2. Enunciado:
-Durante a Batalha de Nova York, Thor está canalizando os raios da tempestade para dentro do seu martelo, o Mjolnir. O ataque especial em área só pode ser desferido se a quantidade de energia acumulada for estritamente maior que 5000 unidades. Escreva um programa que leia o valor de energia canalizada e informe ao Deus do Trovão se ele já pode realizar o ataque.
+ Durante a Batalha de Nova York, Thor está canalizando os raios da tempestade para dentro do seu martelo, o Mjolnir. O ataque especial em área só pode ser desferido se a quantidade de energia acumulada for estritamente maior que 5000 unidades. O programa deve ler o valor de energia canalizada e informar ao Deus do Trovão se ele já pode realizar o ataque.
 
-**Entradas:**
- Energia acumulada:
-   1. Grandeza: Energia
-   2. Unidade de medida: Unidades
-   3. Tipo: Inteiro
+ENTRADAS:
+1. Energia acumulada (em unidades), valor inteiro.
 
-**Saídas:**
- Status do golpe:
-   1. Grandeza: Mensagem de estado
-   2. Unidade de medida: N/A
-   3. Tipo: String
+SAÍDA:
+1. Status do golpe (mensagem indicando se o golpe foi liberado ou se está carregando), string.
 
 Tópico: Estrutura condicional composta (if/else).
 
