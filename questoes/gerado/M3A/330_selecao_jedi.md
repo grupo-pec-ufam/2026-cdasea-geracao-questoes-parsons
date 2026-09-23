@@ -4,33 +4,16 @@ Avaliação de midichlorians e estado emocional para patente Jedi.
 ---
 
 ### 2. Enunciado:
-Durante a Batalha de Nova York, Thor está canalizando os raios da tempestade para dentro do seu martelo, o Mjolnir. O ataque especial em área só pode ser desferido se a quantidade de energia acumulada for estritamente maior que 5000 unidades. 
+No universo de Star Wars, o Conselho Jedi avalia sensitivos à Força. Primeiro, analisa se o jovem possui mais de 10000 midichlorians para ser treinado. Se possuir, o conselho verifica o controle emocional do indivíduo para decidir sua patente inicial.
 
-Escreva um programa que:
-* Leia a quantidade de energia acumulada.
-* Analise o valor lido e mostre a mensagem correspondente à liberação ou espera do golpe especial.
+**ENTRADAS:**
+1. Quantidade de midichlorians (em contagem de microrganismos celulares), valor inteiro.
+2. Controle emocional (indicando 1 para calmo e 2 para instável), valor inteiro.
 
-**ENTRADAS:**   
-   
-   Energia acumulada:
-   1. Grandeza: Energia
-   2. Unidade de medida: Unidades
-   3. Tipo: Inteiro
+**SAÍDA:**
+1. Status da avaliação Jedi (mensagem de patente ou negação), string.
 
-**SAÍDAS:**  
-1. Se a energia acumulada for estritamente maior que 5000, imprima:
-* `Golpe liberado.`  
-2. Caso contrário (se a energia for menor ou igual a 5000), imprima:
-* `Carregando.`
-
-Lista detalhada de saídas:
-1. Status do golpe:
-   * Grandeza: Mensagem de estado
-   * Unidade de medida: N/A
-   * Tipo: String
-   * Número de casas decimais: N/A
-
-Tópico: Estrutura condicional composta (if/else).
+Tópico: Condicionais aninhadas (if/if).
 
 ---
 
