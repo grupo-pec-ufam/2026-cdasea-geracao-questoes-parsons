@@ -20,6 +20,7 @@ Durante a Batalha de Nova York, Thor está canalizando os raios da tempestade pa
    3. Tipo: String
 
 Tópico: Estrutura condicional composta (if/else).
+
 ---
 
 ### 3. Solução:
