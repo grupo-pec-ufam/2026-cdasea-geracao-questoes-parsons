@@ -4,7 +4,7 @@
 
 ## 0. Como usar (checklist do professor, não faz parte do prompt enviado à LLM)
 
-- Anexe como contexto: `roteiro_parsons_codebench_cosolidado.md`, e, se for usar tema fechado, o documento temático.
+- Anexe como contexto: `roteiro_parsons_codebench_cosolidado.md`,`topicosCodeBench.md`  e, se for usar tema fechado, o documento temático.
 - Preencha o bloco **1. Parâmetros** abaixo.
 - Use o modo de raciocínio mais profundo disponível na LLM.
 - Copie a partir da seção **2. Papel** até o fim.
