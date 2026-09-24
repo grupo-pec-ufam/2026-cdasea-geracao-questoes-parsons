@@ -3,7 +3,7 @@
 Caceffo restrito aos tópicos B (Variáveis/Escopo), D (Iteração), G (Booleanos) — 15 misconceptions. Řechtáčková com o **catálogo completo** (80 defeitos), sem restrição.
 
 
-| Defeito consolidado | Caceffo (código) | Caceffo (nome) | Caceffo (descrição) | Řechtáčková (defeito) | Řechtáčková (código EduLint) | Řechtáčková (descrição) | Status | Observação | Módulo(s) IPC | Observação módulo |
+| Defeito consolidado | Caceffo (código) | Caceffo (erro) | Caceffo (descrição) | Řechtáčková (código) | Řechtáčková (erro) | Řechtáčková (descrição) | Status | Observação | Módulo(s) IPC | Observação módulo |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Acessar variável local fora do escopo | PB.1 | Acessar variável local fora do escopo | Variável local é tratada como se fosse global; atribuição feita fora do escopo correto. |  |  |  | Só no Caceffo | Sem correspondência na Řechtáčková. | — | Escopo de variável dentro de função — nenhum módulo cobre funções/escopo de parâmetro. |
 | Parâmetro confundido com variável de mesmo nome fora da função | PB.3 | Parâmetro confundido com variável de mesmo nome fora da função | A variável errada é acessada quando um parâmetro tem o mesmo nome de uma variável local na função que chamou. |  |  |  | Só no Caceffo | (Tema parecido com 'uso de variáveis globais' [R6401] da Řechtáčková, mas não é o mesmo erro.) Tema de escopo é próximo de 'uso de variáveis globais', mas são erros distintos: um é shadowing acidental (bug), outro é uso proposital de global (design). | — | Confusão de parâmetro com variável externa — depende de função, não coberto. |
