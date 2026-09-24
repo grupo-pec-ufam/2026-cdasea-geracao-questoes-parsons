@@ -3,12 +3,15 @@ Avaliação de pré-requisito etário seguido de pontuação em testes físicos.
 
 ---
 
-### 2. Enunciado:
-Na antiga Esparta, apenas jovens que atingissem 20 anos ou mais podiam avançar no exército de combate. Desses que atingiam a idade, eles precisavam passar em exatamente 3 testes de sobrevivência para entrar na Tropa de Elite; caso contrário, iam para a infantaria comum.
+**ENTRADAS:**
+1. Idade do jovem (em anos), valor inteiro.
+2. Quantidade de testes aprovados (em contagem de testes), valor inteiro.
 
-Entradas: um número inteiro com a idade do jovem, seguido de um inteiro com a quantidade de testes aprovados.
-
-Saída: Ainda em treinamento. se for menor de 20 anos; Tropa de Elite. se for maior ou igual a 20 e com 3 testes; Infantaria comum. se for maior ou igual a 20 mas não passou nos 3 testes.
+**SAÍDA:**
+1. Status da patente militar, sem unidade, string. O programa deve imprimir:
+   * `Ainda em treinamento.` se o jovem for menor de 20 anos.
+   * `Tropa de Elite.` se o jovem tiver 20 anos ou mais e passou em exatamente 3 testes.
+   * `Infantaria comum.` se o jovem tiver 20 anos ou mais, mas não passou nos 3 testes.
 
 Tópico: Condicionais aninhadas (if/if).
 
