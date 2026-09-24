@@ -1,15 +1,7 @@
 # Tabela consolidada — Misconceptions (Caceffo) x Defeitos (Řechtáčková) x Módulos de IPC
 
-**Escopo:** Caceffo restrito aos tópicos B (Variáveis/Escopo), D (Iteração), G (Booleanos) — 15 misconceptions. Řechtáčková com o **catálogo completo** (80 defeitos), sem restrição.
+Caceffo restrito aos tópicos B (Variáveis/Escopo), D (Iteração), G (Booleanos) — 15 misconceptions. Řechtáčková com o **catálogo completo** (80 defeitos), sem restrição.
 
-**Fontes:**
-- Caceffo: relatório técnico IC-18-19 (Python, Gama/Caceffo et al. 2018)
-- Řechtáčková: [catálogo EduLint](https://github.com/adaptive-learning/iticse-2024-defects-catalog)
-- Módulos: M1 a M6 de IPC (documento do professor)
-
-**Total: 89 linhas** — 1 comum aos dois catálogos, 14 só no Caceffo, 74 só na Řechtáčková.
-
-**Achado importante:** os módulos de IPC (M1–M6) não cobrem funções. Por isso, todo erro relacionado a escopo de parâmetro, retorno de função, ou nomes/tamanho de função (nos dois catálogos) fica marcado com '—' na coluna de módulo — não é falha de mapeamento, é lacuna real entre o que os dois catálogos documentam e o que a disciplina já ensinou até agora.
 
 | Defeito consolidado | Caceffo (código) | Caceffo (nome) | Caceffo (descrição) | Řechtáčková (defeito) | Řechtáčková (código EduLint) | Řechtáčková (descrição) | Status | Observação | Módulo(s) IPC | Observação módulo |
 |---|---|---|---|---|---|---|---|---|---|---|
