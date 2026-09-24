@@ -6,12 +6,15 @@ Avaliação de midichlorians e estado emocional para patente Jedi.
 ### 2. Enunciado:
 No universo de Star Wars, o Conselho Jedi avalia sensitivos à Força. Primeiro, analisa se o jovem possui mais de 10000 midichlorians para ser treinado. Se possuir, o conselho verifica o controle emocional do indivíduo para decidir sua patente inicial.
 
-**ENTRADAS:**
-1. Quantidade de midichlorians (em contagem de microrganismos celulares), valor inteiro.
-2. Controle emocional (indicando 1 para calmo e 2 para instável), valor inteiro.
+**ENTRADAS:**  
+1. Dois valores inteiros:
+Quantidade de midichlorians.
+Controle emocional (1 para calmo, 2 para instável).
 
-**SAÍDA:**
-1. Status da avaliação Jedi (mensagem de patente ou negação), string.
+**SAÍDAS:**  
+1. Exibir "Novo Padawan." se a quantidade de midichlorians for maior que 10000 e o controle emocional for 1 (calmo).
+2. Exibir "Risco de lado sombrio." se a quantidade de midichlorians for maior que 10000 e o controle emocional for 2 (instável).
+3. Exibir "Treinamento negado." caso a quantidade de midichlorians seja menor ou igual a 10000.
 
 Tópico: Condicionais aninhadas (if/if).
 
