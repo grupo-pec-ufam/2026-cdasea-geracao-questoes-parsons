@@ -12,9 +12,14 @@ Quantidade de midichlorians.
 Controle emocional (1 para calmo, 2 para instável).
 
 **SAÍDAS:**  
-1. Exibir "Novo Padawan." se a quantidade de midichlorians for maior que 10000 e o controle emocional for 1 (calmo).
-2. Exibir "Risco de lado sombrio." se a quantidade de midichlorians for maior que 10000 e o controle emocional for 2 (instável).
-3. Exibir "Treinamento negado." caso a quantidade de midichlorians seja menor ou igual a 10000.
+1. Se a quantidade de midichlorians for maior que 10000 e o controle emocional for 1 (calmo), imprima:  
+   `Novo Padawan.`  
+
+2. Se a quantidade de midichlorians for maior que 10000 e o controle emocional for 2 (instável), imprima:  
+   `Risco de lado sombrio.`  
+
+3. Caso a quantidade de midichlorians seja menor ou igual a 10000, imprima:  
+   `Treinamento negado.`
 
 Tópico: Condicionais aninhadas (if/if).
 
