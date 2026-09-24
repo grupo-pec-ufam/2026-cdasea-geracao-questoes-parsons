@@ -8,8 +8,8 @@ No universo de Star Wars, o Conselho Jedi avalia sensitivos à Força. Primeiro,
 
 **ENTRADAS:**  
 1. Dois valores inteiros:
-Quantidade de midichlorians.
-Controle emocional (1 para calmo, 2 para instável).
+   * Quantidade de midichlorians.
+   *  Controle emocional (1 para calmo, 2 para instável).
 
 **SAÍDAS:**  
 1. Se a quantidade de midichlorians for maior que 10000 e o controle emocional for 1 (calmo), imprima:  
