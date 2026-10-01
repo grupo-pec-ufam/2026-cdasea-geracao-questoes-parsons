@@ -2,7 +2,6 @@
 
 Catálogos consolidados: Caceffo (Python, tópicos B, D e G), Řechtáčková (defeitos, complemento), Progmiscon/Chiodini (Python), Sorva (Apêndice A) e Corinna List (Java/Processing). Só entram erros que se encaixam em algum módulo de IPC (M1–M6); os demais foram descartados (ver final).
 
-**Numeração (coluna Nº):** `M<módulo>.E<n>`, n = posição do erro dentro do módulo, na ordem da tabela. Linha com mais de um módulo traz todos na mesma célula (ex.: `M4.E2 / M6.E1`), sem duplicar a linha.
 
 | Nº (Módulo.Erro) | Defeito consolidado | Caceffo (código) | Caceffo (erro) | Caceffo (descrição) | Řechtáčková (defeito) | Řechtáčková (código EduLint) | Řechtáčková (descrição) | Progmiscon (nome) | Progmiscon (descrição) | Sorva (nº) | Sorva (descrição) | Corinna List (nome) | Corinna List (descrição) | Status | Observação | Módulo(s) IPC | Observação módulo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
