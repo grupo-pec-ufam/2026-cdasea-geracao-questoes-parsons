@@ -12,14 +12,14 @@ Cruzamento dos catálogos de Sorva (2012, Apêndice A), Progmiscon/Chiodini et a
 
 | Módulo | Tema | Misconceptions |
 |---|---|---|
-| [M1](#m1) | Variáveis e programação sequencial | 57 |
+| [M1](#m1) | Variáveis e programação sequencial | 56 |
 | [M2](#m2) | Estruturas condicionais compostas | 25 |
 | [M3E](#m3e) | Estruturas condicionais encadeadas (elif) | 5 |
 | [M3A](#m3a) | Estruturas condicionais aninhadas (if/if) | 1 |
 | [M4](#m4) | Repetição por condição (while) | 12 |
-| [M5](#m5) | Vetores e strings | 16 |
+| [M5](#m5) | Vetores e strings | 15 |
 | [M6](#m6) | Repetição por contagem (for) | 11 |
-| **Total** | | **127** |
+| **Total** | | **125** |
 
 ## M1
 
@@ -80,10 +80,9 @@ Cruzamento dos catálogos de Sorva (2012, Apêndice A), Progmiscon/Chiodini et a
 | **M1.E51** | Código comentado (morto) | O código contém trechos comentados (código morto). | Řechtáčková E800 | — |  |
 | **M1.E52** | Espaço em branco inadequado: no final da linha | Violação de PEP 8 quanto a espaços no fim da linha/arquivo. | Řechtáčková W291,W292,W391,W293 | — |  |
 | **M1.E53** | Uso de divisão float convertida pra int | Uso de divisão float com conversão imediata pra int. | Řechtáčková R6602 | — |  |
-| **M1.E54** | Comparação explícita de tipo (em vez de isinstance) | O código compara tipos em vez de usar isinstance. | Řechtáčková C0123 | — | ⚠ Revisar: isinstance() não está na ementa de M1. Sugestão: descartar. |
-| **M1.E55** | Import fora do nível principal do módulo | Import de módulo feito fora do nível principal do arquivo. | Řechtáčková C0415 | — |  |
-| **M1.E56** | Valor absoluto (condição composta que vira abs()) | Condição composta equivalente a uma única condição com valor absoluto. | Řechtáčková (sem código EduLint) | M2 |  |
-| **M1.E57** | If em vez de usar min/max | Uso de if pra achar máximo/mínimo, em vez da função max/min. | Řechtáčková R1731, R1730 | M2 |  |
+| **M1.E54** | Import fora do nível principal do módulo | Import de módulo feito fora do nível principal do arquivo. | Řechtáčková C0415 | — |  |
+| **M1.E55** | Valor absoluto (condição composta que vira abs()) | Condição composta equivalente a uma única condição com valor absoluto. | Řechtáčková (sem código EduLint) | M2 |  |
+| **M1.E56** | If em vez de usar min/max | Uso de if pra achar máximo/mínimo, em vez da função max/min. | Řechtáčková R1731, R1730 | M2 |  |
 
 ## M2
 
@@ -173,11 +172,10 @@ Cruzamento dos catálogos de Sorva (2012, Apêndice A), Progmiscon/Chiodini et a
 | **M5.E9** | Vetor vazio ao ser criado | Acredita que vetores ficam completamente vazios após a criação (em Java, recebem valores padrão). | Corinna List *Arrays Empty At Beginning* | — | Adaptado de Java/Processing: o conceito vale para listas em Python. Em Python o equivalente é a criação com [0]*n. Avaliação Corinna List (Descobribilidade/Barreira/Frequência): L/L/L. |
 | **M5.E10** | Laço para acessar elemento de índice conhecido | Acredita que é sempre preciso um laço para acessar um elemento, mesmo já sabendo o índice. | Corinna List *Loops for Array Index Access* | M6 | Adaptado de Java/Processing: o conceito vale para listas em Python. |
 | **M5.E11** | Vetor cresce sozinho ao atribuir índice novo | Acredita que o tamanho do vetor é flexível e que basta atribuir a um índice fora do limite para ampliá-lo. | Corinna List *Arrays Grow* | — | Adaptado de Java/Processing: o conceito vale para listas em Python. Em Python o resultado é IndexError. |
-| **M5.E12** | Lista usada pra testar associação (devia ser set) | O código testa associação numa lista repetidamente, quando podia ser um set. | Řechtáčková (sem código EduLint) | — | ⚠ Revisar: a correção sugerida usa set, que não está na ementa de M5. Sugestão: descartar. |
-| **M5.E13** | Comparação de tamanho zero (em vez de bool direto) | Testar se container está vazio comparando tamanho a zero, em vez do jeito pythonico. | Řechtáčková C1803 | M2 |  |
-| **M5.E14** | Uso de len(container) sem comparação | Testar vazio pegando o tamanho e convertendo implicitamente pra bool. | Řechtáčková C1802 | M2 |  |
-| **M5.E15** | Extensão de lista inadequada (+= em vez de append) | Lista estendida com um único argumento em vez de usar append. | Řechtáčková R6601 | — |  |
-| **M5.E16** | Componente redundante em fatiamento (slice) | O código explicita limites implícitos num fatiamento de lista. | Řechtáčková WPS349 | — |  |
+| **M5.E12** | Comparação de tamanho zero (em vez de bool direto) | Testar se container está vazio comparando tamanho a zero, em vez do jeito pythonico. | Řechtáčková C1803 | M2 |  |
+| **M5.E13** | Uso de len(container) sem comparação | Testar vazio pegando o tamanho e convertendo implicitamente pra bool. | Řechtáčková C1802 | M2 |  |
+| **M5.E14** | Extensão de lista inadequada (+= em vez de append) | Lista estendida com um único argumento em vez de usar append. | Řechtáčková R6601 | — |  |
+| **M5.E15** | Componente redundante em fatiamento (slice) | O código explicita limites implícitos num fatiamento de lista. | Řechtáčková WPS349 | — |  |
 
 ## M6
 
@@ -205,7 +203,7 @@ Cruzamento dos catálogos de Sorva (2012, Apêndice A), Progmiscon/Chiodini et a
 | Progmiscon (Python) | 13 de 30 | 17 | Orientação a objetos, `__init__`, `self` e encadeamento de atributos (CannotChainAttributeAccesses, CannotChainAttributeToObjectInstantiation, InitCreates, InitReturnsObject, NoEmptyInit, ObjectsMustBeNamed, SelfAssignable, SelfNoExpression, StringLiteralNoObject, RightToLeftChaining); funções definidas pelo aluno e recursão (DeferredReturn, MultipleValuesReturn, RecursiveFunctionNeedsIfElse, ReturnCall, ReturnUnwindsMultipleFrames); fora do conteúdo (MapToBooleanWithTernaryOperator, NoSingleLogicAnd). |
 | Corinna List (Java/Processing) | 10 de 30 | 20 | Os 18 itens de Functions que dependem de função definida pelo aluno (parâmetro, return, assinatura), Inner Arrays Uniform (matriz) e Arrays Always Contain Data (objetos). |
 | Caceffo (Python, B/D/G) | 11 de 15 | 4 | PB.1, PB.3, PB.5 e PB.6, que dependem de função ou escopo de função. |
-| Řechtáčková | 59 de 80 | 21 | Itens sobre funções, docstrings, anotação de tipo, arquivos, f-strings e afins, além de R6401 (variáveis globais, escopo de função). |
+| Řechtáčková | 57 de 80 | 23 | Itens sobre funções, docstrings, anotação de tipo, arquivos, f-strings e afins, além de R6401 (variáveis globais, escopo de função). Na revisão, saíram também C0123 (comparação explícita de tipo, pois isinstance() não está na ementa) e o item de lista usada em vez de set (set não está na ementa). |
 
 ## Correspondência com a numeração anterior
 
@@ -259,25 +257,23 @@ Cruzamento dos catálogos de Sorva (2012, Apêndice A), Progmiscon/Chiodini et a
 | M1.E23 | M1.E48 |
 | M1.E24 | M1.E49 |
 | M2.E10 / M4.E9 / M6.E12 | M2.E22 |
-| M5.E3 | M5.E12 |
 | M3E.E5 | M3E.E4 |
 | M1.E25 | M1.E50 |
 | M1.E26 | M1.E51 |
 | M2.E11 / M5.E4 | M2.E23 |
 | M3E.E6 / M3A.E3 | M3E.E5 |
-| M5.E5 / M2.E12 | M5.E13 |
+| M5.E5 / M2.E12 | M5.E12 |
 | M6.E13 | M6.E9 |
 | M1.E27 | M1.E52 |
 | M2.E13 | M2.E24 |
 | M2.E14 | M2.E25 |
 | M1.E28 | M1.E53 |
-| M1.E29 | M1.E54 |
-| M5.E6 / M2.E15 | M5.E14 |
-| M1.E30 | M1.E55 |
-| M5.E7 | M5.E15 |
-| M5.E8 | M5.E16 |
-| M1.E31 / M2.E16 | M1.E56 |
-| M1.E32 / M2.E17 | M1.E57 |
+| M5.E6 / M2.E15 | M5.E13 |
+| M1.E30 | M1.E54 |
+| M5.E7 | M5.E14 |
+| M5.E8 | M5.E15 |
+| M1.E31 / M2.E16 | M1.E55 |
+| M1.E32 / M2.E17 | M1.E56 |
 | M2.E18 | M2.E13 |
 | M2.E19 | M2.E14 |
 | M4.E10 | M4.E5 |
