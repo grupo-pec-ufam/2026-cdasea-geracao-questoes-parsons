@@ -3,7 +3,7 @@
 ## 0. Como usar (checklist do professor, não faz parte do prompt enviado à LLM)
 
 - Preencha o bloco **1. Parâmetros** abaixo, escolhendo o **Módulo IPC alvo** na tabela da seção 12.
-- Se for gerar questões **com distratores**, anexe como contexto o arquivo `.md` do catálogo de misconceptions correspondente ao módulo alvo (ex.: `catalogo_misconceptions_condicionais.md` para M2/M3E/M3A, ou `tabela_consolidada.md` para os demais módulos) e informe o nome do arquivo no parâmetro correspondente. Se não for gerar distratores, esse anexo não é necessário.
+- Se for gerar questões **com distratores**, anexe como contexto o arquivo `.md` do catálogo de misconceptions correspondente ao módulo alvo (ex.:tabela_consolidada.md` para os demais módulos) e informe o nome do arquivo no parâmetro correspondente. Se não for gerar distratores, esse anexo não é necessário.
 - Anexe o arquivo `padroes_programacao.md` nele, estão as estruturas do codigo de solução a ser seguida.
 - Use o modo de raciocínio mais profundo disponível na LLM.
 - Copie a partir da seção **2. Papel** até o fim.
@@ -54,7 +54,7 @@ Gerar a quantidade de Problemas de Parsons definida na seção 1 sobre o **Módu
 - **Não** utilize métodos de lista ou de string prontos (`append`, `strip`, `split`, `sort`, `upper`, etc.), salvo se o Módulo IPC alvo for M5 ou M6 e o parâmetro os autorizar explicitamente.
 - Código correto, completo e executável, com contagem de linhas compatível com a dificuldade.
 - Nomes de variáveis descritivos e coerentes com o tema (não use a mesma palavra para variáveis distintas).
-- O padrão base de estrutura das questões deve ser correspodente ao arquivo "padroes_programacao.md" no mesmo topico contido nos parametros da secao 1.
+- O padrão base de estrutura das questões devem ser variações baseadas nos padrões de questão no arquivo informado e no mesmo topico contido nos parametros da secao 1.
 
 - No máximo **uma** linha extra de cálculo aritmético por questão, variando a posição entre as questões.
 - Cada `input()` deve conter um rótulo de até 15 caracteres descrevendo a entrada esperada; exemplo: (`idade = int(input("idade: "))`).
@@ -102,7 +102,7 @@ Estrutura, nesta ordem: narrativa curta, comando, fórmula (se houver), lista de
 ## 7. Regras das mensagens de saída (texto impresso pelo programa)
 
 - Cada mensagem de saída (string impressa pelo `print()` como resultado do programa) deve ter **no máximo 25 caracteres**.
-- Use **apenas** caracteres `a-z`, `A-Z` e `0-9` nas mensagens de saída — **sem acentos, sem espaços, sem pontuação e sem outros caracteres especiais**. Exemplos válidos: `SIM`, `NAO`, `APROVADO`, `REPROVADO`, `VALIDO`, `INVALIDO`, `MAIORIDADE`, `MENORIDADE`.
+- Use **apenas** caracteres `a-z`, `A-Z` e `0-9` nas mensagens de saída — **sem acentos, sem pontuação e sem outros caracteres especiais**. Exemplos válidos: `SIM`, `NAO`, `APROVADO`, `REPROVADO`, `VALIDO`, `INVALIDO`, `MAIORIDADE`, `MENORIDADE`.
 - A mesma regra vale para os rótulos textuais retornados por qualquer ramo do código (if/elif/else, cada iteração relevante, etc.) — nunca apenas para o ramo padrão.
 - Mensagens de saída numéricas (resultado de cálculo) não são afetadas por esta regra — apenas o texto literal impresso pelo programa.
 
